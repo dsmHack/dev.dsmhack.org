@@ -1,20 +1,19 @@
 ---
 label: Blog
 hide_body: true
-is_partial: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the page.
-    config:
-      required: true
-  - type: text
-    name: layout
-    label: Layout
-    hidden: true
-    default: blog
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  description: The title of the page.
+  config:
+    required: true
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: blog
+  config:
+    required: true
 pages:
-  - blog/_index.md
+- content/blog/_index.md

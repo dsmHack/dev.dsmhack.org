@@ -1,29 +1,28 @@
 ---
 label: Section
 hide_body: true
-is_partial: true
 display_field: title
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the section.
-  - type: text
-    name: section_id
-    label: Element ID
-  - type: field_group_list
-    name: actions
-    label: Action Buttons
-    fields:
-      - type: include
-        name: include_action
-        label: Action
-        template: action
-    config:
-      labelField: label
-  - type: text
-    name: component
-    label: Component
-    hidden: true
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  description: The title of the section.
+- type: text
+  name: section_id
+  label: Element ID
+- type: field_group_list
+  name: actions
+  label: Action Buttons
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: text
+  name: component
+  label: Component
+  hidden: true
+  config:
+    required: true

@@ -1,52 +1,52 @@
 ---
 label: Post
-is_partial: false
+hide_body: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the post
-    config:
-      required: true
-  - type: text
-    name: subtitle
-    label: Subtitle
-    description: The text shown just below the post title.
-  - type: datetime
-    name: date
-    label: Date
-    config:
-      required: true
-  - type: file
-    name: thumb_img_path
-    label: Featured Image
-    description: The image shown in the blog feed.
-  - type: file
-    name: content_img_path
-    label: Alternative Featured Image
-    description: The image shown in the single post.
-  - type: text
-    name: excerpt
-    label: Excerpt
-    description: The excerpt of the post displayed in the blog feed.
-  - type: file
-    name: canonical_url
-    label: Canonical URL
-    description: 'The canonical url of the post, if post originates elsewhere.'
-  - type: text
-    name: layout
-    label: Layout
-    hidden: true
-    default: post
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  description: The title of the post
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The text shown just below the post title.
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+- type: file
+  name: thumb_img_path
+  label: Featured Image
+  description: The image shown in the blog feed.
+- type: file
+  name: content_img_path
+  label: Alternative Featured Image
+  description: The image shown in the single post.
+- type: text
+  name: excerpt
+  label: Excerpt
+  description: The excerpt of the post displayed in the blog feed.
+- type: file
+  name: canonical_url
+  label: Canonical URL
+  description: The canonical url of the post, if post originates elsewhere.
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: post
+  config:
+    required: true
 pages:
-  - posts/basic-rules-for-walking-in-the-mountains.md
-  - posts/best-waves-surfing-spain.md
-  - posts/fox-village-in-japan.md
-  - posts/fragments-of-iceland.md
-  - posts/grand-canyon.md
-  - posts/interior-designer.md
-  - posts/japan.md
-  - posts/the-ride-in-the-woods.md
-  - posts/working-from-home.md
+- content/posts/basic-rules-for-walking-in-the-mountains.md
+- content/posts/best-waves-surfing-spain.md
+- content/posts/fox-village-in-japan.md
+- content/posts/fragments-of-iceland.md
+- content/posts/grand-canyon.md
+- content/posts/interior-designer.md
+- content/posts/japan.md
+- content/posts/the-ride-in-the-woods.md
+- content/posts/working-from-home.md

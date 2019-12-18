@@ -1,28 +1,27 @@
 ---
 label: Home
 hide_body: true
-is_partial: false
 fields:
-  - type: text
-    name: title
-    label: Title
-    description: The title of the page.
-    config:
-      required: true
-  - type: blocks
-    name: sections
-    label: Sections
-    description: Home page sections.
-    template_types:
-      - heroblock
-      - contentblock
-      - postsblock
-  - type: text
-    name: layout
-    label: Layout
-    hidden: true
-    default: home
-    config:
-      required: true
+- type: text
+  name: title
+  label: Title
+  description: The title of the page.
+  config:
+    required: true
+- type: blocks
+  name: sections
+  label: Sections
+  description: Home page sections.
+  template_types:
+  - heroblock
+  - contentblock
+  - postsblock
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: home
+  config:
+    required: true
 pages:
-  - _index.md
+- content/_index.md
