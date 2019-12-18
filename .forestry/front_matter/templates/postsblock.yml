@@ -1,0 +1,43 @@
+---
+label: Posts List
+hide_body: true
+is_partial: true
+display_field: title
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: The title of the section.
+  - type: text
+    name: section_id
+    label: Element ID
+  - type: field_group_list
+    name: actions
+    label: Action Buttons
+    fields:
+      - type: include
+        name: include_action
+        label: Action
+        template: action
+    config:
+      labelField: label
+  - type: text
+    name: component
+    label: Component
+    hidden: true
+    default: posts_block.html
+    config:
+      required: true
+  - type: number
+    name: num_posts_displayed
+    label: Number of posts to display
+    config:
+      required: true
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: 'Name of the Stackbit object model, used by fields of type reference'
+    hidden: true
+    default: postsblock
+    config:
+      required: true

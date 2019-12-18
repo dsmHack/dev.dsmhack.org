@@ -1,0 +1,22 @@
+title: Stackbit Fresh Theme
+baseURL: /
+params:
+  layout_style: overflow
+  palette: blue
+  header:
+    title: Stackbit Fresh
+    tagline: Header Tagline
+    profile_img: images/avatar.png
+    bg: dark
+    has_nav: true
+    has_social: true
+  footer:
+    content: '&copy; All rights reserved.'
+    links:
+      - text: Made with Stackbit
+        url: 'https://www.stackbit.com'
+        new_window: true
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm

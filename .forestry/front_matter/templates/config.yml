@@ -1,0 +1,139 @@
+---
+label: Global Site Config
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: Site title
+    config:
+      required: true
+  - type: text
+    name: baseURL
+    label: Base URL
+    description: Hostname (and path) to the root
+    hidden: true
+  - type: field_group
+    name: params
+    label: Params
+    description: Site parameters
+    config:
+      required: true
+    fields:
+      - type: select
+        name: layout_style
+        label: Layout Style
+        description: The style of the theme layout.
+        default: default
+        config:
+          source:
+            type: custom
+          options:
+            - default
+            - overflow
+      - type: select
+        name: palette
+        label: Color Palette
+        description: The color palette of the theme.
+        default: green
+        config:
+          source:
+            type: custom
+          options:
+            - green
+            - blue
+            - violet
+            - orange
+      - type: field_group
+        name: header
+        label: Header Configuration
+        fields:
+          - type: text
+            name: title
+            label: Header Title
+            description: >-
+              The title displayed on the left side. If value is not set, the
+              author name will be used.
+          - type: text
+            name: tagline
+            label: Header Tagline
+            description: The tagline displayed on the left side.
+          - type: file
+            name: profile_img
+            label: Profile Image
+            description: >-
+              The author profile image displayed on the left side. If value is
+              not set, the author avatar will be used.
+          - type: select
+            name: bg
+            label: Header Background
+            description: The background of the left side.
+            default: light
+            config:
+              source:
+                type: custom
+              options:
+                - light
+                - dark
+          - type: boolean
+            name: has_nav
+            label: Enable Navigation Menu
+            description: Display the navigation menu bar on the left side.
+            default: true
+          - type: boolean
+            name: has_social
+            label: Enable Social Links
+            description: Display social links on the left side.
+            default: true
+      - type: field_group
+        name: footer
+        label: Footer Configuration
+        fields:
+          - type: text
+            name: content
+            label: Footer Content
+            description: The copyright text displayed in the footer.
+          - type: field_group_list
+            name: links
+            label: Links
+            description: A list of links displayed in the footer.
+            fields:
+              - type: text
+                name: text
+                label: Link text
+              - type: text
+                name: url
+                label: URL
+              - type: boolean
+                name: new_window
+                label: Open in new window
+                default: true
+            config:
+              labelField: text
+  - type: list
+    name: disableKinds
+    label: Disable Kinds
+    description: Enable disabling of all pages of the specified Kinds.
+    hidden: true
+    config:
+      source:
+        type: custom
+      options:
+        - page
+        - home
+        - section
+        - taxonomy
+        - taxonomyTerm
+        - RSS
+        - sitemap
+        - robotsTXT
+        - '404'
+      use_select: true
+  - type: boolean
+    name: uglyURLs
+    label: Ugly URLs
+    description: >-
+      When enabled, creates URL of the form /filename.html instead of
+      /filename/.
+    hidden: true
