@@ -4,31 +4,31 @@
             "type": "twitter",
             "title": "Twitter",
             "icon": "fa-twitter",
-            "url": "https://twitter.com/"
+            "url": "https://twitter.com/dsmhack"
+        },
+        {
+            "type": "facebook",
+            "title": "Facebook",
+            "icon": "fa-facebook",
+            "url": "https://www.facebook.com/dsmHack/"
         },
         {
             "type": "instagram",
             "title": "Instagram",
             "icon": "fa-instagram",
-            "url": "https://www.instagram.com/"
-        },
-        {
-            "type": "github",
-            "title": "GitHub",
-            "icon": "fa-github",
-            "url": "https://github.com/"
+            "url": "https://www.instagram.com/dsm_hack"
         },
         {
             "type": "linkedin",
             "title": "LinkedIn",
             "icon": "fa-linkedin",
-            "url": "https://www.linkedin.com/"
+            "url": "https://www.linkedin.com/company/dsmhack"
         },
         {
-            "type": "devto",
-            "title": "DEV",
-            "icon": "fa-dev",
-            "url": "https://dev.to/"
+            "type": "github",
+            "title": "GitHub",
+            "icon": "fa-github",
+            "url": "https://github.com/dsmhack"
         }
     ]
 }
