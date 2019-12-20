@@ -24,4 +24,3 @@ fields:
   config:
     required: true
 pages:
-- content/contact.md
