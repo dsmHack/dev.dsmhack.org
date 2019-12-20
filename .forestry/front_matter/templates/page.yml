@@ -24,5 +24,6 @@ fields:
   config:
     required: true
 pages:
-- content/about.md
+- content/jamstack.md
+- content/wordpress.md
 - content/style-guide.md
