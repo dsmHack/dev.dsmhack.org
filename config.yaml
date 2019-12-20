@@ -2,6 +2,7 @@ title: Hacker On-Boarding
 baseURL: /
 params:
   favicon: images/dsmhack-avatar.png
+  logo: /images/dsmhack.png
   palette: blue
   palettes:
     blue:
