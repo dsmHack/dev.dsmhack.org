@@ -1,8 +1,26 @@
 {{ define "content" }}
 
-{{ range $section := .Params.sections }}
-  {{ $include_dict := dict "section" $section "Site" $.Site }}
-  {{ partial $section.component $include_dict }}
-{{ end }}
+  <article class="post page post-full">
+    <header class="post-header">
+      <h1 class="post-title underline">{{ .Params.title }}</h1>
+    </header><!-- .post-header -->
+    {{ if .Params.subtitle }}
+    <div class="post-subtitle">
+      {{ .Params.subtitle | safeHTML }}
+    </div><!-- .post-subtitle -->
+    {{ end }}
+    {{ if .Params.img_path }}
+    <div class="post-thumbnail">
+      <img src="{{ .Params.img_path | relURL }}" alt="{{ .Params.title }}" />
+    </div><!-- .post-thumbnail -->
+    {{ end }}
+    <div class="post-content">
+      {{ .Content }}
+    </div><!-- .post-content -->
+    {{ range $section := .Params.sections }}
+      {{ $include_dict := dict "section" $section "Site" $.Site }}
+      {{ partial $section.component $include_dict }}
+    {{ end }}
+  </article><!-- .post -->
 
 {{ end }}

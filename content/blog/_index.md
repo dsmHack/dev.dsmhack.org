@@ -5,4 +5,5 @@ menu:
     name: Blog
     weight: 2
 layout: blog
+draft: true
 ---
