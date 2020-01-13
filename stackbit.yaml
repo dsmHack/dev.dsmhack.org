@@ -1,0 +1,580 @@
+stackbitVersion: ~0.2.0
+ssgName: hugo
+ssgVersion: 0.1.12
+buildCommand: ./ssg-build.sh
+publishDir: public
+staticDir: static
+uploadDir: images
+dataDir: data
+pagesDir: content
+pageLayoutKey: layout
+metadata:
+  title: Hyperspace
+  description: a multi-page theme with scroll-animated home sections
+  author: Pixelarity
+  authorURL: 'https://pixelarity.com'
+  palettes:
+    blue:
+      images:
+        small: images/demo-blue-256x192.png
+        large: images/demo-blue-1024x768.png
+    green:
+      images:
+        small: images/demo-green-256x192.png
+        large: images/demo-green-1024x768.png
+    purple:
+      images:
+        small: images/demo-purple-256x192.png
+        large: images/demo-purple-1024x768.png
+stackbit_banner:
+  show_banner: true
+  name: Hyperspace
+  create_url: 'https://app.stackbit.com/create?theme=hyperspace'
+  github_url: 'https://github.com/stackbithq/stackbit-theme-hyperspace'
+models:
+  config:
+    type: config
+    label: Config
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: Site title
+        required: true
+      - type: string
+        name: baseURL
+        label: Base URL
+        description: Hostname (and path) to the root
+        hidden: true
+      - type: object
+        name: params
+        label: Params
+        description: Site parameters
+        required: true
+        fields:
+          - type: enum
+            name: palette
+            label: Color Palette
+            options:
+              - blue
+              - green
+              - purple
+            required: true
+            description: The color palette used for the page
+          - type: object
+            name: palettes
+            label: Palettes
+            hidden: true
+            fields:
+              - type: palette
+                name: blue
+                label: Blue
+              - type: palette
+                name: green
+                label: Green
+              - type: palette
+                name: purple
+                label: Purple
+      - type: site_menus
+        name: menu
+        label: Site Menus
+        description: Menu items not related to a specific page
+      - type: list
+        name: disableKinds
+        label: Disable Kinds
+        description: Enable disabling of all pages of the specified Kinds.
+        items:
+          type: enum
+          options:
+            - page
+            - home
+            - section
+            - taxonomy
+            - taxonomyTerm
+            - RSS
+            - sitemap
+            - robotsTXT
+            - '404'
+        hidden: true
+      - type: boolean
+        name: uglyURLs
+        label: Ugly URLs
+        description: >-
+          When enabled, creates URL of the form /filename.html instead of
+          /filename/.
+        hidden: true
+  footer:
+    type: data
+    file: footer.yml
+    label: Footer Configuration
+    fields:
+      - type: enum
+        name: landing_style
+        label: Home Footer Style
+        required: true
+        options:
+          - alt
+          - style1-alt
+          - style2-alt
+          - style3-alt
+          - style4-alt
+        description: The style of the home page footer
+      - type: enum
+        name: alt_style
+        label: Default Footer Style
+        required: true
+        options:
+          - alt
+          - style1-alt
+          - style2-alt
+          - style3-alt
+          - style4-alt
+        description: The style of the page footer
+      - type: string
+        name: copyright
+        label: Copyright Text
+        description: The text displayed in the copyright inside the page footer
+      - type: list
+        name: links
+        label: Links
+        description: A list of links displayed in the footer.
+        items:
+          type: object
+          labelField: text
+          fields:
+            - type: string
+              name: text
+              label: Link text
+            - type: string
+              name: url
+              label: URL
+              widget: url
+            - type: boolean
+              name: new_window
+              label: Open in new window
+              default: true
+  home:
+    type: page
+    label: Home
+    hideContent: true
+    singleInstance: true
+    template: home
+    file: _index.md
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+        description: The title of the page
+      - type: object
+        name: sidebar
+        label: Page Sidebar
+        fields:
+          - type: list
+            name: entries
+            label: Sidebar Entries
+            description: The links displayed in the page sidebar
+            items:
+              type: object
+              labelField: title
+              fields:
+                - type: string
+                  name: title
+                  label: Title
+                  description: The title displayed in the page sidebar
+                - type: string
+                  name: url
+                  label: URL
+                  widget: url
+                  description: >-
+                    the URL (/generic, or /feugiat ...), or section ID (like
+                    #intro or #one ...) of the sidebar entry
+                - type: boolean
+                  name: is_primary
+                  label: Is Primary
+                  default: false
+                  description: >-
+                    Underlines the Sidebar entry initially. note: only one entry
+                    can be highlighted at a time, so the first entry with this
+                    set will be selected
+      - type: list
+        name: sections
+        label: Sections
+        description: Home sections
+        items:
+          type: reference
+          labelField: title
+          models:
+            - intro
+            - spotlights
+            - features
+            - contact
+      - type: page_menus
+        name: menu
+        label: Home Menus
+        description: Which menus should this page show up in
+  page:
+    type: page
+    label: page
+    template: page
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: image
+        name: content_img_path
+        label: Content Image
+        description: The image displayed in the content section of the page
+      - type: object
+        name: home_spotlights
+        label: Home Spotlights
+        fields:
+          - type: boolean
+            name: enabled
+            label: enabled
+            default: false
+            description: If the page is desplayed in the home spotlights section
+          - type: number
+            name: weight
+            label: Home Spotlight Index
+            description: The index of the page in the home spotlight
+          - type: markdown
+            name: excerpt
+            label: Page Excerpt
+            description: The text displayed in the home spotlight
+          - type: object
+            name: home_img
+            label: Home Spotlight Image
+            description: The image displayed in the home spotlight
+            fields:
+              - type: image
+                name: path
+                label: image
+              - type: string
+                name: data_position
+                label: Image Data Position
+                default: top center
+                description: >-
+                  Controls the place of the image in its container (bottom left,
+                  top right, center center, etc.)
+              - type: string
+                name: url
+                label: URL
+                widget: url
+      - type: page_menus
+        name: menu
+        label: page Menus
+        description: Which menus should this page show up in
+  elements:
+    type: page
+    label: Elements
+    hideContent: true
+    singleInstance: true
+    template: elements
+    file: elements.md
+    fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
+      - type: page_menus
+        name: menu
+        label: Elements Menus
+        description: Which menus should this page show up in
+  section:
+    type: object
+    label: section
+    labelField: title
+    fields:
+      - type: string
+        name: title
+        label: Section Title
+        required: true
+        description: >-
+          The bold text displayed at the top of the section (Also used by the
+          CMS, even if no title is displayed in the section)
+      - type: string
+        name: section_id
+        label: Section ID
+        required: true
+      - type: enum
+        name: background_style
+        label: Background Style
+        options:
+          - style1
+          - style2
+          - style3
+          - style4
+        required: true
+        description: The color scheme used for the section
+      - type: string
+        name: component
+        label: Section Component
+        required: true
+        hidden: true
+  intro:
+    type: object
+    label: Intro Section
+    extends:
+      - section
+    fields:
+      - name: title
+        default: Intro Section
+      - type: markdown
+        name: subtitle
+        label: Section Subtitle
+        description: The text displayed below the section title
+      - name: section_id
+        default: intro
+      - name: background_style
+        default: style1
+      - type: list
+        name: actions
+        label: Section Action Buttons
+        items:
+          type: action
+      - name: component
+        const: intro.html
+  spotlights:
+    type: object
+    label: Spotlights Section
+    extends:
+      - section
+    fields:
+      - name: title
+        default: Spotlights Section
+      - name: section_id
+        default: one
+      - name: background_style
+        default: style2
+      - name: component
+        const: spotlights.html
+  features:
+    type: object
+    label: Features Section
+    extends:
+      - section
+    fields:
+      - name: title
+        default: Features Section
+      - type: markdown
+        name: subtitle
+        label: Section Subtitle
+        description: The text displayed below the section title
+      - name: section_id
+        default: two
+      - name: background_style
+        default: style3
+      - type: list
+        name: features_list
+        label: Features
+        description: A list of features
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Feature Title
+            - type: markdown
+              name: text
+              label: FeatureText
+              description: The text displayed below the feature title
+            - type: string
+              name: icon
+              label: Feature Icon
+              description: Font Awesome icon
+      - type: list
+        name: actions
+        label: Action Buttons
+        items:
+          type: action
+      - name: component
+        const: features.html
+  contact:
+    type: object
+    label: Contact Section
+    extends:
+      - section
+    fields:
+      - name: title
+        default: Contact Section
+      - type: markdown
+        name: text
+        label: Section Text
+        description: The text displayed below the section title
+      - name: section_id
+        default: three
+      - name: background_style
+        default: style1
+      - type: list
+        name: contact_list
+        label: Contact Methods
+        description: A list of contact methods
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Contact method title
+              required: true
+            - type: text
+              name: text
+              label: Content Method Text
+              description: The text displayed below the contact method title
+            - type: string
+              name: url
+              label: URL
+              widget: url
+      - type: object
+        name: social
+        label: Social Media
+        fields:
+          - type: string
+            name: title
+            label: Social Media Section Title
+          - type: list
+            name: social_icons
+            label: Social Icons
+            description: A list of social media
+            items:
+              type: object
+              labelField: title
+              fields:
+                - type: string
+                  name: title
+                  label: Icon Title
+                - type: string
+                  name: icon
+                  label: Icon
+                  description: Font Awesome icon
+                - type: string
+                  name: url
+                  label: URL
+                  widget: url
+      - name: component
+        const: contact.html
+  action:
+    type: object
+    label: Action
+    labelField: label
+    fields:
+      - type: string
+        name: label
+        label: Button Label
+        description: The text displayed inside the button
+      - type: string
+        name: url
+        label: URL
+        widget: url
+      - type: boolean
+        name: is_scrolly
+        label: Is Scrolly
+        default: false
+        description: Gives the button a scroll animation (if the URL is a section ID)
+      - type: boolean
+        name: is_primary
+        label: Is Primary
+        default: false
+        description: Gives the button a primary color scheme
+  palette:
+    type: object
+    label: Palette
+    fields:
+      - type: object
+        name: sass
+        label: SASS
+        fields:
+          - type: color
+            name: bg
+            label: BG
+          - type: color
+            name: accent1
+            label: Accent1
+          - type: color
+            name: accent2
+            label: Accent2
+          - type: color
+            name: accent3
+            label: Accent3
+  site_menus:
+    type: object
+    label: Site Menus
+    labelField: null
+    description: >-
+      Site menus model, defines list of menus that can be specified from within
+      site configuration
+    fields:
+      - type: list
+        name: main
+        label: Main menu
+        description: List of items for Main menu
+        items:
+          type: site_menu_item
+  site_menu_item:
+    type: object
+    label: Site Menu Item
+    labelField: name
+    description: 'Site menu item model, defines fields for a single site menu item'
+    fields:
+      - type: string
+        name: identifier
+        label: Identifier
+        description: >-
+          The identifier of a menu item could be used as a parent menu of
+          another menu item
+        required: true
+      - type: string
+        name: name
+        label: Title
+        description: The title of the menu item
+        required: true
+      - type: string
+        name: url
+        label: URL
+        description: The URL the menu item links to
+        required: true
+      - type: number
+        name: weight
+        label: Weight
+        description: Position for sorting
+      - type: string
+        name: parent
+        label: Parent Menu Identifier
+        description: The parent of an entry should be the identifier of another entry.
+  page_menus:
+    type: object
+    label: Page Menus
+    labelField: null
+    description: 'Page menus model, defines menus that can be specified from within pages'
+    fields:
+      - type: page_menu_item
+        name: main
+        label: Main menu item
+        description: Main menu item for this page
+  page_menu_item:
+    type: object
+    label: Page Menu Item
+    labelField: name
+    description: 'Page menu item model, defines fields for a single page menu item'
+    fields:
+      - type: string
+        name: name
+        label: Title
+        description: The title of the menu item
+      - type: number
+        name: weight
+        label: Weight
+        description: Position for sorting
+      - type: string
+        name: identifier
+        label: Identifier
+        description: >-
+          The identifier of a menu item could be used as a parent menu of
+          another menu item
+      - type: string
+        name: parent
+        label: Parent Menu Identifier
+        description: The parent of an entry should be the identifier of another entry.

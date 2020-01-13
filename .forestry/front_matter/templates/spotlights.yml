@@ -1,0 +1,50 @@
+---
+label: Spotlights Section
+hide_body: true
+is_partial: true
+display_field: title
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: >-
+      The bold text displayed at the top of the section (Also used by the CMS,
+      even if no title is displayed in the section)
+    default: Spotlights Section
+    config:
+      required: true
+  - type: text
+    name: section_id
+    label: Section Id
+    default: one
+    config:
+      required: true
+  - type: select
+    name: background_style
+    label: Background Style
+    description: The color scheme used for the section
+    default: style2
+    config:
+      required: true
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+        - style3
+        - style4
+  - type: text
+    name: component
+    label: Component
+    hidden: true
+    config:
+      required: true
+    default: spotlights.html
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: 'Name of the Stackbit object model, used by fields of type reference'
+    hidden: true
+    default: spotlights
+    config:
+      required: true

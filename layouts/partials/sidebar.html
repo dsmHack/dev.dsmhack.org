@@ -1,0 +1,12 @@
+<!-- Sidebar -->
+<section id="sidebar">
+    <div class="inner">
+        <nav>
+            <ul>
+                {{ range $item := .Params.sidebar.entries }}
+                    <li><a {{ if $item.is_primary }}id="first_link" {{ end }}href="{{ if strings.HasPrefix $item.url "#" }}{{ $item.url }}{{ else }}{{ $item.url | relURL }}{{ end }}">{{ $item.title }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+</section>

@@ -1,0 +1,60 @@
+<!-- Three -->
+<section id="{{ .section.section_id }}" class="wrapper {{ .section.background_style }} fade-up">
+    <div class="inner">
+        <h2>{{ .section.title }}</h2>
+        {{ partial "markdownify-block" .section.text }}
+        <div class="split style1">
+            <section>
+                <form name="contactForm" method="post" action="#" netlify-honeypot="bot-field" data-netlify="true">
+                    <div class="screen-reader-text">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </div>
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <input type="hidden" name="form-name" value="contactForm" />
+                    <ul class="actions">
+                        <li><a href="" class="button submit">Send Message</a></li>
+                    </ul>
+                </form>
+            </section>
+            <section>
+                <ul class="contact">
+                    {{ if .section.contact_list }}
+                        {{ range $item := .section.contact_list }}
+                            <li>
+                                <h3>{{ $item.title }}</h3>
+                                {{ if $item.url }}
+                                    <a href="{{ $item.url }}">{{ $item.text }}</a>
+                                {{ else }}
+                                    <span>{{ replace $item.text "\n" "<br />" | safeHTML }}</span>
+                                {{ end }}
+                            </li>
+                        {{ end }}
+                    {{ end }}
+                    {{ if .section.social }}
+                        <li>
+                            <h3>{{ .section.social.title }}</h3>
+                            <ul class="icons">
+                                {{ range $item := .section.social.social_icons }}
+                                    <li><a href="{{ $item.url }}" class="{{ $item.icon }}"><span class="label">{{ $item.title }}</span></a></li>
+                                {{ end }}
+                            </ul>
+                        </li>
+                    {{ end }}
+                </ul>
+            </section>
+        </div>
+    </div>
+</section>

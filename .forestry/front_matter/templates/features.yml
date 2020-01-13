@@ -1,0 +1,90 @@
+---
+label: Features Section
+hide_body: true
+is_partial: true
+display_field: title
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: >-
+      The bold text displayed at the top of the section (Also used by the CMS,
+      even if no title is displayed in the section)
+    default: Features Section
+    config:
+      required: true
+  - type: textarea
+    name: subtitle
+    label: Section Subtitle
+    description: The text displayed below the section title
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: text
+    name: section_id
+    label: Section Id
+    default: two
+    config:
+      required: true
+  - type: select
+    name: background_style
+    label: Background Style
+    description: The color scheme used for the section
+    default: style3
+    config:
+      required: true
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+        - style3
+        - style4
+  - type: field_group_list
+    name: features_list
+    label: Features
+    description: A list of features
+    fields:
+      - type: text
+        name: title
+        label: Feature Title
+      - type: textarea
+        name: text
+        label: FeatureText
+        description: The text displayed below the feature title
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+      - type: text
+        name: icon
+        label: Feature Icon
+        description: Font Awesome icon
+    config:
+      labelField: title
+  - type: field_group_list
+    name: actions
+    label: Action Buttons
+    fields:
+      - type: include
+        name: include_action
+        label: Action
+        template: action
+    config:
+      labelField: label
+  - type: text
+    name: component
+    label: Component
+    hidden: true
+    config:
+      required: true
+    default: features.html
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: 'Name of the Stackbit object model, used by fields of type reference'
+    hidden: true
+    default: features
+    config:
+      required: true

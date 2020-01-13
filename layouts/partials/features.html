@@ -1,0 +1,23 @@
+<!-- Two -->
+<section id="{{ .section.section_id }}" class="wrapper {{ .section.background_style }} fade-up">
+    <div class="inner">
+        <h2>{{ .section.title }}</h2>
+        {{ partial "markdownify-block" .section.subtitle }}
+        <div class="features">
+            {{ range $feature := .section.features_list }}
+                <section>
+                    <span class="icon major {{ $feature.icon }}"></span>
+                    <h3>{{ $feature.title }}</h3>
+                    {{ partial "markdownify-block" $feature.text }}
+                </section>
+            {{ end }}
+        </div>
+        {{ if .section.actions }}
+            <ul class="actions">
+                {{ range $action := .section.actions }}
+                    <li><a href="{{ if strings.HasPrefix $action.url "#" }}{{ $action.url }}{{ else }}{{ $action.url | relURL }}{{ end }}" class="button{{ if $action.is_primary }} primary{{ end }}{{ if $action.is_scrolly }} scrolly{{ end }}">{{ $action.label }}</a></li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    </div>
+</section>

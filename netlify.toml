@@ -1,0 +1,6 @@
+[build]
+publish = "public"
+command = "./stackbit-build.sh"
+
+  [build.environment]
+  HUGO_VERSION = "0.47"

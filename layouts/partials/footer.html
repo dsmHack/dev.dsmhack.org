@@ -1,0 +1,15 @@
+<!-- Footer -->
+<footer id="footer" class="wrapper {{ if eq .Params.layout "home" }}{{ .Site.Data.footer.landing_style }}{{ else }}{{ .Site.Data.footer.alt_style }}{{ end }}">
+    <div class="inner">
+        <ul class="menu">
+            <li>
+                {{ .Site.Data.footer.copyright | safeHTML }}
+                &nbsp;
+                {{ range $link := .Site.Data.footer.links }}
+                    <a href="{{ $link.url }}" {{ if $link.new_window }}target="_blank" rel="noopener"
+                    {{ end }}>{{ $link.text }}</a>.
+                {{ end }}
+            </li>
+        </ul>
+    </div>
+</footer>

@@ -1,0 +1,27 @@
+title: Hyperspace
+baseURL: /
+params:
+  palette: blue
+  palettes:
+    blue:
+      sass:
+        bg: '#253149'
+        accent1: '#4167a6'
+        accent2: '#3f8eb3'
+        accent3: '#4ca07e'
+    green:
+      sass:
+        bg: '#20313d'
+        accent1: '#2e9692'
+        accent2: '#3aa4ca'
+        accent3: '#b84d50'
+    purple:
+      sass:
+        bg: '#312450'
+        accent1: '#5e42a6'
+        accent2: '#5052b5'
+        accent3: '#b74e91'
+disableKinds:
+  - RSS
+  - taxonomy
+  - taxonomyTerm

@@ -1,0 +1,11 @@
+<!-- Header -->
+<header id="header">
+    <a href="{{ "/" | relURL }}" class="title">{{ .Site.Title }}</a>
+    <nav>
+        <ul>
+            {{ range $item := .Site.Menus.main }}
+                <li><a href="{{ $item.URL | relURL }}" {{ if eq $item.URL $.URL }}class="active"{{ end }}>{{ $item.Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>

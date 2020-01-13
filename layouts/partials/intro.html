@@ -1,0 +1,14 @@
+<!-- Intro -->
+<section id="{{ .section.section_id }}" class="wrapper {{ .section.background_style }} fullscreen fade-up">
+    <div class="inner">
+        <h1>{{ .section.title }}</h1>
+        {{ partial "markdownify-block" .section.subtitle }}
+        {{ if .section.actions }}
+            <ul class="actions">
+                {{ range $action := .section.actions }}
+                    <li><a href="{{ if strings.HasPrefix $action.url "#" }}{{ $action.url }}{{ else }}{{ relref $.page $action.url | relURL }}{{ end }}" class="button{{ if $action.is_scrolly }} scrolly{{ end }}{{ if $action.is_primary }} primary{{ end }}">{{ $action.label }}</a></li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    </div>
+</section>

@@ -1,0 +1,19 @@
+{{ define "content" }}
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">{{ .Title }}</h1>
+                {{ if .Params.content_img_path }}
+                    <span class="image fit"><img src="{{ .Params.content_img_path | relURL }}" alt="" /></span>
+                {{ end }}
+                {{ .Content }}
+            </div>
+        </section>
+        
+    </div>
+
+{{ end }}

@@ -1,0 +1,101 @@
+---
+label: Contact Section
+hide_body: true
+is_partial: true
+display_field: title
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: >-
+      The bold text displayed at the top of the section (Also used by the CMS,
+      even if no title is displayed in the section)
+    default: Contact Section
+    config:
+      required: true
+  - type: textarea
+    name: text
+    label: Section Text
+    description: The text displayed below the section title
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: text
+    name: section_id
+    label: Section Id
+    default: three
+    config:
+      required: true
+  - type: select
+    name: background_style
+    label: Background Style
+    description: The color scheme used for the section
+    default: style1
+    config:
+      required: true
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+        - style3
+        - style4
+  - type: field_group_list
+    name: contact_list
+    label: Contact Methods
+    description: A list of contact methods
+    fields:
+      - type: text
+        name: title
+        label: Contact method title
+        config:
+          required: true
+      - type: textarea
+        name: text
+        label: Content Method Text
+        description: The text displayed below the contact method title
+      - type: text
+        name: url
+        label: URL
+    config:
+      labelField: title
+  - type: field_group
+    name: social
+    label: Social Media
+    fields:
+      - type: text
+        name: title
+        label: Social Media Section Title
+      - type: field_group_list
+        name: social_icons
+        label: Social Icons
+        description: A list of social media
+        fields:
+          - type: text
+            name: title
+            label: Icon Title
+          - type: text
+            name: icon
+            label: Icon
+            description: Font Awesome icon
+          - type: text
+            name: url
+            label: URL
+        config:
+          labelField: title
+  - type: text
+    name: component
+    label: Component
+    hidden: true
+    config:
+      required: true
+    default: contact.html
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: 'Name of the Stackbit object model, used by fields of type reference'
+    hidden: true
+    default: contact
+    config:
+      required: true

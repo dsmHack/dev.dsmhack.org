@@ -1,0 +1,64 @@
+---
+label: page
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Page Title
+    config:
+      required: true
+  - type: file
+    name: content_img_path
+    label: Content Image
+    description: The image displayed in the content section of the page
+  - type: field_group
+    name: home_spotlights
+    label: Home Spotlights
+    fields:
+      - type: boolean
+        name: enabled
+        label: enabled
+        description: If the page is desplayed in the home spotlights section
+        default: false
+      - type: number
+        name: weight
+        label: Home Spotlight Index
+        description: The index of the page in the home spotlight
+      - type: textarea
+        name: excerpt
+        label: Page Excerpt
+        description: The text displayed in the home spotlight
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+      - type: field_group
+        name: home_img
+        label: Home Spotlight Image
+        description: The image displayed in the home spotlight
+        fields:
+          - type: file
+            name: path
+            label: image
+          - type: text
+            name: data_position
+            label: Image Data Position
+            description: >-
+              Controls the place of the image in its container (bottom left, top
+              right, center center, etc.)
+            default: top center
+          - type: text
+            name: url
+            label: URL
+  - type: text
+    name: layout
+    label: Layout
+    hidden: true
+    default: page
+    config:
+      required: true
+pages:
+  - feugiat.md
+  - generic.md
+  - sed.md
+  - ultricies.md
