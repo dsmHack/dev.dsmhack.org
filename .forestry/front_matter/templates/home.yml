@@ -12,6 +12,14 @@ fields:
   name: sidebar
   label: Page Sidebar
   fields:
+  - type: file
+    name: primary_logo
+    label: Primary Logo
+    description: The image displayed above the sidebar menu when on a large screen
+  - type: file
+    name: mobile_logo
+    label: Mobile Logo
+    description: The image displayed to the left of the top menu bar when on a small screen
   - type: field_group_list
     name: entries
     label: Sidebar Entries

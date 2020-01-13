@@ -52,6 +52,10 @@ models:
         description: Site parameters
         required: true
         fields:
+          - type: image
+            name: favicon
+            label: favicon
+            description: The favicon for the site
           - type: enum
             name: palette
             label: Color Palette
@@ -170,6 +174,14 @@ models:
         name: sidebar
         label: Page Sidebar
         fields:
+          - type: image
+            name: primary_logo
+            label: Primary Logo
+            description: The image displayed above the sidebar menu when on a large screen
+          - type: image
+            name: mobile_logo
+            label: Mobile Logo
+            description: The image displayed to the left of the top menu bar when on a small screen
           - type: list
             name: entries
             label: Sidebar Entries

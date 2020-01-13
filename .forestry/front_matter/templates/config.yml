@@ -20,6 +20,10 @@ fields:
   config:
     required: true
   fields:
+  - type: file
+    name: favicon
+    label: favicon
+    description: The favicon for the site
   - type: select
     name: palette
     label: Color Palette

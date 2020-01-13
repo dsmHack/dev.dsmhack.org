@@ -1,25 +1,26 @@
 <!doctype html>
 <html>
-    <head>    
-        
+    <head>
+
         <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        {{ if .Site.Params.favicon }}<link rel="icon" href="{{.Site.Params.favicon}}">{{ end }}
         <link rel="stylesheet" href="{{ (resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.css" . | resources.ToCSS (dict "indentWidth" 4 "outputStyle" "nested" "precision" 10)).Permalink }}" />
         <link rel="stylesheet" href="{{ "assets/css/markdown-images.css" | relURL }}" />
         <noscript><link rel="stylesheet" href="{{ "assets/css/noscript.css" | relURL }}" /></noscript>
-        
+
     </head>
     <body>
-        
+
         {{ if eq .Params.layout "home" }}
                 {{ partial "sidebar.html" . }}
             {{ else }}
                 {{ partial "header.html" . }}
             {{ end }}
-        
+
             {{ block "content" . }}{{ end }}
-        
+
             {{ partial "footer.html" . }}
         <!-- Scripts -->
         <script src="{{ "assets/js/jquery.min.js" | relURL }}"></script>
@@ -30,5 +31,5 @@
         <script src="{{ "assets/js/util.js" | relURL }}"></script>
         <script src="{{ "assets/js/init.js" | relURL }}"></script>
         <script src="{{ "assets/js/page_load.js" | relURL }}"></script>
-    </body> 
+    </body>
 </html>

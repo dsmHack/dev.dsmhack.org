@@ -1,127 +1,74 @@
 ---
 title: Home
 sidebar:
+  primary_logo: /images/dsmhack.png
+  mobile_logo: /images/dsmhack-avatar.png
   entries:
-    - title: Welcome
-      url: '#intro'
+    - title: Hacker On-Boarding
+      url: "#intro"
       is_primary: true
-    - title: Who we are
-      url: '#one'
+    - title: Choosing a solution
+      url: "#choosing-a-solution"
       is_primary: false
-    - title: What we do
-      url: '#two'
-      is_primary: false
-    - title: Get in touch
-      url: '#three'
+    - title: Solutions
+      url: "#solutions"
       is_primary: false
 sections:
   - type: intro
     template: intro
-    title: Hyperspace
-    subtitle: |-
-      Cras aliquam amet adipiscing nibh faucibus suscipit ut Parturient  
-      col accumsan est arcu donec sed Eleifend Integer.
+    title: Hacker On-Boarding
+    subtitle: We've created this site to provide information to help get your team off
+      to a quicker start during dsmHack. Here you will find suggestions on various technology
+      stacks that you can consider when building solutions for your nonprofit and some
+      recommended best practices.
     section_id: intro
     background_style: style1
-    actions:
-      - label: Learn more
-        url: '#one'
-        is_scrolly: true
-        is_primary: false
+    actions: []
     component: intro.html
+  - type: features
+    template: features
+    title: Choosing a solution
+    subtitle: 'Your team is welcome to choose any technology that you feel is best to
+      help your nonprofit so please don''t feel you have to limit your team to the content
+      of this site.  Just make sure to consider the following when choosing a solution:'
+    section_id: choosing-a-solution
+    background_style: style3
+    features_list:
+    - title: How much will it cost?
+      text: Many of us work for business that are able to spend a lot of money on technology
+        solutions.  The same is not usually true for nonprofit organizations.  Make
+        sure you understand how much you nonprofit can afford and choose a solution
+        that will stay within their budget.
+      icon: fa-usd
+    - title: How secure is it?
+      text: Once your nonprofit leave's dsmHack they will likely be on their own to
+        support and maintain the solution you build for them.  Many of our nonprofits
+        do not have much experience with information security so making sure that you
+        deliver them a solution that is secure and will stay secure for months and years
+        after dsmHack is very important.
+      icon: fa-lock
+    - title: What is the learning curve?
+      text: Your team likely consists of some very talented technology professionals
+        who are capable of building some impressive custom solutions.  However, your
+        nonprofits are not technology professionals.  They are going to be willing to
+        learn a bit but definitely don't have time / desire to become experts in software
+        engineering.  Make sure your solution fits their knowledge level and remember,
+        part of your job at dsmHack is to train them.
+      icon: fa-book
+    - title: Can it be done in 48 hours?
+      text: I'm sure you all have big ideas and we all appreciate your enthusiasm.  Just
+        remember that at dsmHack time is not on your side.  You only have 48 hours (less
+        if you manage to get some sleep) to design, implement, and test your solution
+        as well as create documentation and train your nonprofit on how to use it.  So
+        just make sure whatever you choose is doable in that small time window.
+      icon: fa-clock-o
+    component: features.html
   - type: spotlights
     template: spotlights
     title: Spotlights Section
-    section_id: one
+    section_id: solutions
     background_style: style2
     component: spotlights.html
-  - type: features
-    template: features
-    title: What we do
-    subtitle: >-
-      Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis
-      mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget
-      hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit
-      quis lorem.
-    section_id: two
-    background_style: style3
-    features_list:
-      - title: Lorem ipsum amet
-        text: >-
-          Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-          aliquam turpis mauris, sed ultricies erat dapibus.
-        icon: fa-code
-      - title: Aliquam sed nullam
-        text: >-
-          Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-          aliquam turpis mauris, sed ultricies erat dapibus.
-        icon: fa-lock
-      - title: Sed erat ullam corper
-        text: >-
-          Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-          aliquam turpis mauris, sed ultricies erat dapibus.
-        icon: fa-cog
-      - title: Veroeros quis lorem
-        text: >-
-          Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-          aliquam turpis mauris, sed ultricies erat dapibus.
-        icon: fa-desktop
-      - title: Urna quis bibendum
-        text: >-
-          Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-          aliquam turpis mauris, sed ultricies erat dapibus.
-        icon: fa-chain
-      - title: Aliquam urna dapibus
-        text: >-
-          Phasellus convallis elit id ullam corper amet et pulvinar. Duis
-          aliquam turpis mauris, sed ultricies erat dapibus.
-        icon: fa-diamond
-    actions:
-      - label: Learn more
-        url: /generic
-        is_scrolly: false
-        is_primary: false
-    component: features.html
-  - type: contact
-    template: contact
-    title: Get in touch
-    text: >-
-      Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis
-      mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget
-      hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit
-      quis lorem.
-    section_id: three
-    background_style: style1
-    contact_list:
-      - title: Address
-        text: |-
-          12345 Somewhere Road #654
-          Nashville, TN 00000-0000
-          USA
-      - title: Email
-        text: user@Hyperspace.tld
-        url: '#'
-      - title: Phone
-        text: (000) 000-0000
-    social:
-      title: Social
-      social_icons:
-        - title: Twitter
-          icon: fa-twitter
-          url: '#'
-        - title: Facebook
-          icon: fa-facebook
-          url: '#'
-        - title: GitHub
-          icon: fa-github
-          url: '#'
-        - title: Instagram
-          icon: fa-instagram
-          url: '#'
-        - title: LinkedIn
-          icon: fa-linkedin
-          url: '#'
-    component: contact.html
 menu:
   main:
     name: Home

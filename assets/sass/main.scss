@@ -98,7 +98,7 @@ $palette: (
 	@import 'components/table';
 	@import 'components/wrapper';
 	@import 'components/banner';
-	
+
 // Layout.
 
 	@import 'layout/header';
@@ -106,7 +106,11 @@ $palette: (
 	@import 'layout/footer';
 	@import 'layout/sidebar';
 	@import 'layout/intro';
-	
+
 // Stackbit Banner
 
 	@import 'imports/banner';
+
+// Customizations
+
+	@import 'custom/sidebar';

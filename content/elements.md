@@ -5,4 +5,5 @@ menu:
     name: Elements
     weight: 3
 layout: elements
+draft: true
 ---

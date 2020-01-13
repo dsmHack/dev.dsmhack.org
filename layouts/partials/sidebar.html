@@ -1,6 +1,16 @@
 <!-- Sidebar -->
 <section id="sidebar">
     <div class="inner">
+        {{ if .Params.sidebar.primary_logo }}
+        <div class="primary-logo">
+            <img src="{{.Params.sidebar.primary_logo}}" alt="dsmHack"/>
+        </div>
+        {{ end }}
+        {{ if .Params.sidebar.mobile_logo }}
+        <div class="mobile-logo">
+            <img src="{{.Params.sidebar.mobile_logo}}" alt="dsmHack"/>
+        </div>
+        {{ end }}
         <nav>
             <ul>
                 {{ range $item := .Params.sidebar.entries }}

@@ -1,6 +1,7 @@
-title: Hyperspace
+title: Hacker On-Boarding
 baseURL: /
 params:
+  favicon: images/dsmhack-avatar.png
   palette: blue
   palettes:
     blue:
