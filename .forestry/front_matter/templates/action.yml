@@ -1,23 +1,22 @@
 ---
 label: Action
 hide_body: true
-is_partial: true
 display_field: label
 fields:
-  - type: text
-    name: label
-    label: Button Label
-    description: The text displayed inside the button
-  - type: text
-    name: url
-    label: URL
-  - type: boolean
-    name: is_scrolly
-    label: Is Scrolly
-    description: Gives the button a scroll animation (if the URL is a section ID)
-    default: false
-  - type: boolean
-    name: is_primary
-    label: Is Primary
-    description: Gives the button a primary color scheme
-    default: false
+- type: text
+  name: label
+  label: Button Label
+  description: The text displayed inside the button
+- type: text
+  name: url
+  label: URL
+- type: boolean
+  name: is_scrolly
+  label: Is Scrolly
+  description: Gives the button a scroll animation (if the URL is a section ID)
+  default: false
+- type: boolean
+  name: is_primary
+  label: Is Primary
+  description: Gives the button a primary color scheme
+  default: false

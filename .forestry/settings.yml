@@ -2,39 +2,48 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: static/admin
-webhook_url: 'https://api.stackbit.com/project/5e1bcd7932c065001b14ca01/webhook/forestry'
+webhook_url: https://api.stackbit.com/project/5e1bcd7932c065001b14ca01/webhook/forestry
 sections:
-  - type: document
-    label: Config
-    path: config.yaml
-    templates:
-      - config
-  - type: document
-    label: Footer Configuration
-    path: data/footer.yml
-    templates:
-      - footer
-  - type: document
-    label: Home
-    path: content/_index.md
-    templates:
-      - home
-  - type: directory
-    path: content
-    match: '**/*'
-    exclude: '{_index.md,elements.md}'
-    label: page
-    create: all
-    templates:
-      - page
-  - type: document
-    label: Elements
-    path: content/elements.md
-    templates:
-      - elements
+- type: document
+  path: config.yaml
+  label: Config
+  templates:
+  - config
+- type: document
+  path: data/footer.yml
+  label: Footer Configuration
+  templates:
+  - footer
+- type: document
+  path: content/_index.md
+  label: Home
+  templates:
+  - home
+- type: directory
+  path: content
+  label: page
+  create: all
+  match: "**/*"
+  exclude: "{_index.md,elements.md}"
+  templates:
+  - page
+- type: document
+  path: content/elements.md
+  label: Elements
+  templates:
+  - elements
 upload_dir: static/images
-public_path: /images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ':filename:'
+file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.47
+  preview_output_directory: public
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
 version: '0.47'

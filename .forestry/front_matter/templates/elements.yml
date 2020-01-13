@@ -1,19 +1,18 @@
 ---
 label: Elements
 hide_body: true
-is_partial: false
 fields:
-  - type: text
-    name: title
-    label: Page Title
-    config:
-      required: true
-  - type: text
-    name: layout
-    label: Layout
-    hidden: true
-    default: elements
-    config:
-      required: true
+- type: text
+  name: title
+  label: Page Title
+  config:
+    required: true
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: elements
+  config:
+    required: true
 pages:
-  - elements.md
+- content/elements.md

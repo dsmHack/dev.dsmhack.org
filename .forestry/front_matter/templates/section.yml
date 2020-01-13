@@ -1,38 +1,36 @@
 ---
 label: section
 hide_body: true
-is_partial: true
 display_field: title
 fields:
-  - type: text
-    name: title
-    label: Section Title
-    description: >-
-      The bold text displayed at the top of the section (Also used by the CMS,
-      even if no title is displayed in the section)
-    config:
-      required: true
-  - type: text
-    name: section_id
-    label: Section ID
-    config:
-      required: true
-  - type: select
-    name: background_style
-    label: Background Style
-    description: The color scheme used for the section
-    config:
-      required: true
-      source:
-        type: custom
-      options:
-        - style1
-        - style2
-        - style3
-        - style4
-  - type: text
-    name: component
-    label: Section Component
-    hidden: true
-    config:
-      required: true
+- type: text
+  name: title
+  label: Section Title
+  description: The bold text displayed at the top of the section (Also used by the
+    CMS, even if no title is displayed in the section)
+  config:
+    required: true
+- type: text
+  name: section_id
+  label: Section ID
+  config:
+    required: true
+- type: select
+  name: background_style
+  label: Background Style
+  description: The color scheme used for the section
+  config:
+    required: true
+    source:
+      type: custom
+    options:
+    - style1
+    - style2
+    - style3
+    - style4
+- type: text
+  name: component
+  label: Section Component
+  hidden: true
+  config:
+    required: true

@@ -1,58 +1,54 @@
 ---
 label: Home
 hide_body: true
-is_partial: false
 fields:
-  - type: text
-    name: title
-    label: Page Title
-    description: The title of the page
-    config:
-      required: true
-  - type: field_group
-    name: sidebar
-    label: Page Sidebar
+- type: text
+  name: title
+  label: Page Title
+  description: The title of the page
+  config:
+    required: true
+- type: field_group
+  name: sidebar
+  label: Page Sidebar
+  fields:
+  - type: field_group_list
+    name: entries
+    label: Sidebar Entries
+    description: The links displayed in the page sidebar
     fields:
-      - type: field_group_list
-        name: entries
-        label: Sidebar Entries
-        description: The links displayed in the page sidebar
-        fields:
-          - type: text
-            name: title
-            label: Title
-            description: The title displayed in the page sidebar
-          - type: text
-            name: url
-            label: URL
-            description: >-
-              the URL (/generic, or /feugiat ...), or section ID (like #intro or
-              #one ...) of the sidebar entry
-          - type: boolean
-            name: is_primary
-            label: Is Primary
-            description: >-
-              Underlines the Sidebar entry initially. note: only one entry can
-              be highlighted at a time, so the first entry with this set will be
-              selected
-            default: false
-        config:
-          labelField: title
-  - type: blocks
-    name: sections
-    label: Sections
-    description: Home sections
-    template_types:
-      - intro
-      - spotlights
-      - features
-      - contact
-  - type: text
-    name: layout
-    label: Layout
-    hidden: true
-    default: home
+    - type: text
+      name: title
+      label: Title
+      description: The title displayed in the page sidebar
+    - type: text
+      name: url
+      label: URL
+      description: 'the URL (/generic, or /feugiat ...), or section ID (like #intro
+        or #one ...) of the sidebar entry'
+    - type: boolean
+      name: is_primary
+      label: Is Primary
+      description: 'Underlines the Sidebar entry initially. note: only one entry can
+        be highlighted at a time, so the first entry with this set will be selected'
+      default: false
     config:
-      required: true
+      labelField: title
+- type: blocks
+  name: sections
+  label: Sections
+  description: Home sections
+  template_types:
+  - intro
+  - spotlights
+  - features
+  - contact
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: home
+  config:
+    required: true
 pages:
-  - _index.md
+- content/_index.md
