@@ -41,7 +41,7 @@ sections:
         that will stay within their budget.
       icon: fa-usd
     - title: How secure is it?
-      text: Once your nonprofit leave's dsmHack they will likely be on their own to
+      text: Once your nonprofit leaves dsmHack they will likely be on their own to
         support and maintain the solution you build for them.  Many of our nonprofits
         do not have much experience with information security so making sure that you
         deliver them a solution that is secure and will stay secure for months and years
