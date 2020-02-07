@@ -1,0 +1,11 @@
+
+
+#main a {
+  color: _palette(accent3);
+  filter: brightness(110%);
+
+  &:hover {
+    color: _palette(accent3);
+    filter: brightness(130%);
+  }
+}
