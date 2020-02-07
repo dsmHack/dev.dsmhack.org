@@ -3,11 +3,17 @@
     <div class="inner">
         <ul class="menu">
             <li>
-                {{ .Site.Data.footer.copyright | safeHTML }}
+                {{ replace .Site.Data.footer.copyright "{year}" now.Year | safeHTML }}
                 &nbsp;
-                {{ range $link := .Site.Data.footer.links }}
-                    <a href="{{ $link.url }}" {{ if $link.new_window }}target="_blank" rel="noopener"
-                    {{ end }}>{{ $link.text }}</a>.
+                Built with
+                {{$len := (len .Site.Data.footer.links)}}
+                {{ range $index, $link := .Site.Data.footer.links }}
+                    <a href="{{ $link.url }}" {{ if $link.new_window }}target="_blank"{{end}} rel="noopener">{{ $link.text }}</a>
+                    {{ if eq (add $index 2) $len}}
+                      &amp;
+                    {{ else if lt (add $index 1) $len}}
+                      ,
+                    {{ end }}
                 {{ end }}
             </li>
         </ul>

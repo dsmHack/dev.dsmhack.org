@@ -1,8 +1,11 @@
 ---
   landing_style: style1-alt
   alt_style: alt
-  copyright: "&copy; dsmHack. All rights reserved."
+  copyright: "&copy; 2019 - {year} DSM Charity Hackathon. All rights reserved."
   links:
-  - text: Made with Stackbit
+  - text: Hugo
+    url: https://gohugo.io/
+    new_window: true
+  - text: Stackbit
     url: https://www.stackbit.com
     new_window: true
