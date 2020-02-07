@@ -3,6 +3,7 @@ baseURL: /
 params:
   favicon: images/dsmhack-avatar.png
   logo: /images/dsmhack.png
+  githubURL: https://github.com/dsmHack/dev.dsmhack.org
   palette: blue
   palettes:
     blue:
