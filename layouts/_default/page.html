@@ -11,9 +11,31 @@
                     <span class="image fit"><img src="{{ .Params.content_img_path | relURL }}" alt="" /></span>
                 {{ end }}
                 {{ .Content }}
+
+              <div class="page-navigation">
+                <hr />
+                
+                {{ $pages := where (site.Pages.ByParam "home_spotlights.weight").Reverse "Params.layout" "page" }}
+
+                {{ with $pages.Prev . }}
+                <p class="prev-page">
+                  <a title="Previous: {{ .Title }}" href="{{ .Permalink }}">
+                    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous: {{ .Title }}
+                  </a>
+                </p>
+                {{ end }}
+
+                {{ with $pages.Next . }}
+                <p class="next-page">
+                  <a title="Next: {{ .Title }}" href="{{ .Permalink }}">
+                    Next: {{ .Title }} <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  </a>
+                </p>
+                {{ end }}
+              </div>
+              <div style="clear: both"></div>
             </div>
         </section>
-        
     </div>
 
 {{ end }}
