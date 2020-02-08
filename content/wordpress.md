@@ -21,6 +21,8 @@ plug-ins available to extend its functionality.
 These are some examples of past dsmHack projects which were built using Wordpress:
 
 * [Jolly Holiday Lights](https://www.jollyholidaylights.org/) - (2019)
+* [Iowa Radio Reading](https://www.iowaradioreading.org/) - (2019)
+* [Community Support Advocates](https://teamcsa.org/) - (2019)
 * [RoofTop Foundation](http://rooftopfoundation.org/) - (2017)
 * [Help-A-Heart](https://help-a-heart.org/) - (2015)
 
