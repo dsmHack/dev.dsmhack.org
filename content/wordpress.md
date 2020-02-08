@@ -20,7 +20,8 @@ plug-ins available to extend its functionality.
 
 These are some examples of past dsmHack projects which were built using Wordpress:
 
-* [RoofTop Foundation](http://rooftopfoundation.org/) (2017)
+* [Jolly Holiday Lights](https://www.jollyholidaylights.org/) - (2019)
+* [RoofTop Foundation](http://rooftopfoundation.org/) - (2017)
 * [Help-A-Heart](https://help-a-heart.org/) - (2015)
 
 ## Is Wordpress right for your project?
