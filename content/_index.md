@@ -3,6 +3,7 @@ title: Home
 sidebar:
   primary_logo: /images/dsmhack.png
   mobile_logo: /images/dsmhack-avatar.png
+  social: true
   entries:
     - title: Hacker On-Boarding
       url: "#intro"

@@ -1,6 +1,13 @@
 <!-- Footer -->
 <footer id="footer" class="wrapper {{ if eq .Params.layout "home" }}{{ .Site.Data.footer.landing_style }}{{ else }}{{ .Site.Data.footer.alt_style }}{{ end }}">
     <div class="inner">
+        {{ if .Site.Data.footer.social }}
+        <div class="social-icons">
+          {{ range $social := .Site.Params.social }}
+            <a href="{{$social.url}}"><i class="fa fa-{{$social.icon}}" aria-hidden="true"></i></a>
+          {{ end }}
+        </div>
+        {{ end }}
         <ul class="menu">
             <li>
                 {{ replace .Site.Data.footer.copyright "{year}" now.Year | safeHTML }}

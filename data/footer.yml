@@ -2,6 +2,7 @@
   landing_style: style1-alt
   alt_style: alt
   copyright: "&copy; 2019 - {year} DSM Charity Hackathon. All rights reserved."
+  social: true
   links:
   - text: Hugo
     url: https://gohugo.io/

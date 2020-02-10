@@ -18,5 +18,12 @@
                 {{ end }}
             </ul>
         </nav>
+        {{ if .Params.sidebar.social }}
+        <div class="social-icons">
+          {{ range $social := .Site.Params.social }}
+            <a href="{{$social.url}}"><i class="fa fa-{{$social.icon}}" aria-hidden="true"></i></a>
+          {{ end }}
+        </div>
+        {{ end }}
     </div>
 </section>

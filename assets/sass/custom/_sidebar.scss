@@ -44,4 +44,20 @@
       display: none;
     }
   }
+
+  .social-icons {
+    display: none;
+  }
+
+  @include breakpoint('>large') {
+    .social-icons {
+      text-align: center;
+      display: block;
+
+      a {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+  }
 }
