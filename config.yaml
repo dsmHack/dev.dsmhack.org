@@ -4,6 +4,17 @@ params:
   favicon: images/dsmhack-avatar.png
   logo: /images/dsmhack.png
   githubURL: https://github.com/dsmHack/dev.dsmhack.org
+  social:
+  - icon: github
+    url: https://github.com/dsmHack/dev.dsmhack.org
+  - icon: facebook-square
+    url: https://facebook.com/dsmhack
+  - icon: twitter
+    url: https://twitter.com/dsmhack
+  - icon: instagram
+    url: https://instagram.com/dsm_hack
+  - icon: linkedin
+    url: https://linkedin.com/company/dsmhack
   palette: blue
   palettes:
     blue:
