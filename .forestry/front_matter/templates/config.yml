@@ -24,6 +24,37 @@ fields:
     name: favicon
     label: favicon
     description: The favicon for the site
+  - name: primary_logo
+    type: file
+    config:
+      maxSize: 250
+    label: Primary Logo
+    description: The logo image used on large screens.
+  - name: mobile_logo
+    type: file
+    config:
+      maxSize: 250
+    label: Mobile Logo
+    description: The logo image used on small screens.
+  - name: social
+    type: field_group_list
+    fields:
+    - name: icon
+      type: text
+      config:
+        required: false
+      label: icon
+    - name: url
+      type: text
+      config:
+        required: false
+      label: url
+    config:
+      min: 
+      max: 
+      labelField: icon
+    label: Social Links
+    description: Links to social media sites.
   - type: select
     name: palette
     label: Color Palette
