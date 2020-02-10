@@ -1,14 +1,14 @@
 <!-- Sidebar -->
 <section id="sidebar">
     <div class="inner">
-        {{ if .Params.sidebar.primary_logo }}
+        {{ if .Site.Params.primary_logo }}
         <div class="primary-logo">
-            <img src="{{.Params.sidebar.primary_logo}}" alt="dsmHack"/>
+            <img src="{{.Site.Params.primary_logo}}" alt="dsmHack"/>
         </div>
         {{ end }}
-        {{ if .Params.sidebar.mobile_logo }}
+        {{ if .Site.Params.mobile_logo }}
         <div class="mobile-logo">
-            <img src="{{.Params.sidebar.mobile_logo}}" alt="dsmHack"/>
+            <img src="{{.Site.Params.mobile_logo}}" alt="dsmHack"/>
         </div>
         {{ end }}
         <nav>

@@ -1,10 +1,67 @@
 #header {
 
-  .title img {
-    width: 9.0em;
-    margin-top: -0.9em;
-    margin-bottom: -1.35em;
-    border-radius: 5px;
+  .primary-logo {
+
+    img {
+      width: 9.0em;
+      margin-top: -0.9em;
+      margin-bottom: -1.35em;
+      border-radius: 5px;
+    }
+
+    @include breakpoint('<=large') {
+      display: none;
+    }
   }
 
+  .mobile-logo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    left: 1em;
+    position: absolute;
+    top: 5px;
+
+    img {
+      display: block;
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    @include breakpoint('>large') {
+      display: none;
+    }
+  }
+
+  @include breakpoint('<=large') {
+    padding: 1em 2em;
+  }
+
+  @include breakpoint('<=xsmall') {
+    display: flex;
+    padding: 1em 2em;
+    text-align: start;
+
+    .title {
+      font-size: 1.25em;
+      padding: 0;
+    }
+
+    > nav {
+      border-top: none;
+      text-align: right;
+
+      > ul {
+        > li {
+          margin-left: 0;
+
+          a {
+            height: inherit;
+            line-height: inherit;
+          }
+        }
+      }
+    }
+  }
 }

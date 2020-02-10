@@ -1,9 +1,17 @@
 <!-- Header -->
 <header id="header">
     <a href="{{ "/" | relURL }}" class="title">
-        {{ if .Site.Params.logo }}
-            <img src="{{.Site.Params.logo}}" alt="dsmHack" />
-        {{ else }}
+        {{ if .Site.Params.primary_logo }}
+        <div class="primary-logo">
+            <img src="{{.Site.Params.primary_logo}}" alt="dsmHack"/>
+        </div>
+        {{ end }}
+        {{ if .Site.Params.mobile_logo }}
+        <div class="mobile-logo">
+            <img src="{{.Site.Params.mobile_logo}}" alt="dsmHack"/>
+        </div>
+        {{ end }}
+        {{ if not (or .Site.Params.primary_logo .Site.Params.mobile_logo)}}
             {{ .Site.Title }}
         {{ end }}
     </a>

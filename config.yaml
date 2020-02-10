@@ -3,6 +3,8 @@ baseURL: /
 params:
   favicon: images/dsmhack-avatar.png
   logo: /images/dsmhack.png
+  primary_logo: /images/dsmhack.png
+  mobile_logo: /images/dsmhack-avatar.png
   githubURL: https://github.com/dsmHack/dev.dsmhack.org
   social:
   - icon: github
