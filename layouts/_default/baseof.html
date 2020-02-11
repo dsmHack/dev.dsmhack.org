@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="{{ (resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "assets/css/main.css" . | resources.ToCSS (dict "indentWidth" 4 "outputStyle" "nested" "precision" 10)).Permalink }}" />
         <link rel="stylesheet" href="{{ "assets/css/markdown-images.css" | relURL }}" />
         <noscript><link rel="stylesheet" href="{{ "assets/css/noscript.css" | relURL }}" /></noscript>
-
+        {{ if eq (getenv "HUGO_ENV") "production" }}
+        {{ template "_internal/google_analytics.html" . }}
+        {{ end }}
     </head>
     <body>
 

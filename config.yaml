@@ -1,5 +1,6 @@
 title: Hacker On-Boarding
 baseURL: /
+googleAnalytics: UA-84353642-2
 params:
   favicon: images/dsmhack-avatar.png
   logo_url: https://dsmhack.org
