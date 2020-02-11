@@ -3,12 +3,16 @@
     <div class="inner">
         {{ if .Site.Params.primary_logo }}
         <div class="primary-logo">
+          <a href="{{ .Site.Params.logo_url}}" target="_blank">
             <img src="{{.Site.Params.primary_logo}}" alt="dsmHack"/>
+          </a>
         </div>
         {{ end }}
         {{ if .Site.Params.mobile_logo }}
         <div class="mobile-logo">
+          <a href="{{ .Site.Params.logo_url}}" target="_blank">
             <img src="{{.Site.Params.mobile_logo}}" alt="dsmHack"/>
+          </a>
         </div>
         {{ end }}
         <nav>

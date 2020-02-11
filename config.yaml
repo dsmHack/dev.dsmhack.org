@@ -2,6 +2,7 @@ title: Hacker On-Boarding
 baseURL: /
 params:
   favicon: images/dsmhack-avatar.png
+  logo_url: https://dsmhack.org
   primary_logo: /images/dsmhack.png
   mobile_logo: /images/dsmhack-avatar.png
   social:
