@@ -36,7 +36,7 @@ sections:
     - title: How much will it cost?
       text: Many of us work for business that are able to spend a lot of money on technology
         solutions.  The same is not usually true for nonprofit organizations.  Make
-        sure you understand how much you nonprofit can afford and choose a solution
+        sure you understand how much your nonprofit can afford and choose a solution
         that will stay within their budget.
       icon: fa-usd
     - title: How secure is it?
