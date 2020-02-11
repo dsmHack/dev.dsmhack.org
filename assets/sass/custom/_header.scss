@@ -1,5 +1,10 @@
 #header {
 
+  & > nav > ul > li a {
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
   .primary-logo {
 
     img {
