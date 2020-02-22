@@ -130,7 +130,7 @@ Whenever I mention the idea of using JAMStack for a dsmHack project I almost alw
 basically goes like this, "How do you expect nonprofits to know how to update markdown files and a Git repository?" This
 usually is the result of someone only having experience using [Jekyll](https://jekyllrb.com/) with [Github
 Pages](https://pages.github.com/) for a project that only ever required a developer be involved.  The truth is there are
-several solutions for managing content of JAMStack sites that over full featured user interfaces completed with WYSIWYG
+several solutions for managing content of JAMStack sites that offer full featured user interfaces completed with WYSIWYG
 editors. These solutions are referred to as a headless CMS.
 
 The site, [headlessCMS.org](https://headlesscms.org/), provides a summary of most of the known headless CMS solutions
