@@ -122,7 +122,7 @@ and it will drive all the next decisions you make. We recommend you consider the
   you just install Gatsby like any other NPM package.  Next check to see if there is some sort of a "quick start"
   documentation for the generator and read through it to determine how quick the process of just getting a simple site
   running will be. For example, you can find Hugo's quick start [here](https://gohugo.io/getting-started/quick-start/)
-  and Gatsby's quick start [here](gatsbyjs.org/docs/quick-start/).
+  and Gatsby's quick start [here](https://gatsbyjs.org/docs/quick-start/).
 
 ### Headless CMS
 
