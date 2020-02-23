@@ -70,7 +70,7 @@ sections:
     component: spotlights.html
 menu:
   main:
-    name: Go Back
+    name: Home
     weight: 1
 layout: home
 ---
