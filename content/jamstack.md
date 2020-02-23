@@ -79,7 +79,7 @@ downsides as well.  Here are some pros and cons to consider:
 
   In a lot of ways this con isn't really fair.  If you've never used WordPress before then the learning curve can be
   pretty steep there as well.  The difference here is that many people have experience with WordPress so it's probably
-  easier to get support at this point.  That being said, WordPress and all of it's plugins and themes can feel a lot
+  easier to get support at this point.  That being said, WordPress and all of its plugins and themes can feel a lot
   like a black box at times which make the learning curve difficult when trying to customize your site.  Since JAMStack
   sites are basically all contained to flat files within a source repository it's much easier to dig in and figure out
   what is happening so in the long term it is easier to have a full understanding of how your site works.
@@ -145,7 +145,7 @@ There are two primary types of headless CMS solutions: Git-based and API driven.
   A Git-based CMS uses your projects Git repository as the storage solution for all the content.  It will typically keep
   several files that contain meta-data describing the structure of your content and then build its user interface using
   those files.  Some of these CMS solutions like [NetlifyCMS](https://www.netlifycms.org/) run entirely within your site
-  and only use a third-party for authentication of users.  Other's like [Forestry](https://forestry.io/) host the entire
+  and only use a third-party for authentication of users.  Others, like [Forestry](https://forestry.io/), host the entire
   admin user interface through their own site and just connect to your Git repository to make changes.  The biggest
   benefit of a Git-based CMS is that your entire site is all in the Git repository and versioned. If you ever decide to
   change to another CMS or the CMS you are currently using shuts down then you don't have any data to migrate because it
@@ -153,8 +153,8 @@ There are two primary types of headless CMS solutions: Git-based and API driven.
 
 * **API driven**
 
-  An API driven CMS stores your content in a database and provides API's for retrieving that content when your site is
-  being built. The benefit of using an API driven CMS is that it is much simpler to create complex data model's.  If you
+  An API driven CMS stores your content in a database and provides APIs for retrieving that content when your site is
+  being built. The benefit of using an API driven CMS is that it is much simpler to create complex data models.  If you
   use a hosted API driven CMS solutions like [Contentful](https://www.contentful.com/) then management of the database
   and users is handled by the CMS provider which can make things pretty simple to setup.  You can also use an open
   source API driven CMS like [Strapi](https://strapi.io/) but you will then need to host the CMS and the database
