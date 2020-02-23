@@ -31,7 +31,7 @@ These are some examples of past dsmHack projects which were built using JAMStack
 
 ## Is JAMStack right for your project?
 
-There are several benefits to choosing a JAMStack solution vs a dynamic site like Wordpress, but there are some
+There are several benefits to choosing a JAMStack solution vs a dynamic site like WordPress, but there are some
 downsides as well.  Here are some pros and cons to consider:
 
 ### Pros
@@ -57,14 +57,14 @@ downsides as well.  Here are some pros and cons to consider:
   revert back to a previous version of the site without losing a sweat.  Also, depending on the build service you are
   using you can even have preview versions of your site created for each pull request so changes can be verified before
   they are deployed to production.  These are all features that feel very simple and out-of-box with JAMStack but are
-  usually much more complicated with a dynamic solution like Wordpress.
+  usually much more complicated with a dynamic solution like WordPress.
 
 * **Flexibility**
 
   For a developer and designer, a JAMStack site allows a lot more flexibility to build and design the site the way they
   want and using the technologies they want.  A theme is more of a starting point that you are encouraged to customize
   to fit your needs.  It is also usually much simpler to create a theme from scratch than it is with a dynamic site like
-  Wordpress because themes are just simple template files.
+  WordPress because themes are just simple template files.
 
 ### Cons
 
@@ -77,9 +77,9 @@ downsides as well.  Here are some pros and cons to consider:
 
 * **Learning Curve**
 
-  In a lot of ways this con isn't really fair.  If you've never used Wordpress before then the learning curve can be
-  pretty steep there as well.  The difference here is that many people have experience with Wordpress so it's probably
-  easier to get support at this point.  That being said, Wordpress and all of it's plugins and themes can feel a lot
+  In a lot of ways this con isn't really fair.  If you've never used WordPress before then the learning curve can be
+  pretty steep there as well.  The difference here is that many people have experience with WordPress so it's probably
+  easier to get support at this point.  That being said, WordPress and all of it's plugins and themes can feel a lot
   like a black box at times which make the learning curve difficult when trying to customize your site.  Since JAMStack
   sites are basically all contained to flat files within a source repository it's much easier to dig in and figure out
   what is happening so in the long term it is easier to have a full understanding of how your site works.
