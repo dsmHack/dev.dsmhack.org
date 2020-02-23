@@ -32,7 +32,7 @@ Another option that has become popular at the hack is to use a cloud based websi
 
 * **Proprietary**
 
-  A potential risk of using a cloud based site builder is the fact that your entire site is essentially propriety.  If your nonprofit ever wants to move to another site builder or the current site builder goes out of business then their website would have to be rebuilt again from the ground up.  Some of the site builders do allow you to create an export of your site but usually the code exported is not pretty so it really is only useful just to have a backup.
+  A potential risk of using a cloud based site builder is the fact that your entire site is essentially proprietary.  If your nonprofit ever wants to move to another site builder or the current site builder goes out of business then their website would have to be rebuilt again from the ground up.  Some of the site builders do allow you to create an export of your site but usually the code exported is not pretty so it really is only useful just to have a backup.
 
 ## Wix
 
