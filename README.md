@@ -10,8 +10,8 @@
 
         hugo server -D
 
-1. Browse to [http://localhost:1313/]()
+1. Browse to [http://localhost:1313/](http://localhost:1313/)
 
 # Content Management System
 
-This website's content can be managed directly with Git or through Forestry by navigating to [https://dev.dsmhack.org/admin]().
+This website's content can be managed directly with Git or through Forestry by navigating to [https://dev.dsmhack.org/admin](https://dev.dsmhack.org/admin).
