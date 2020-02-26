@@ -23,7 +23,7 @@ dynamic content and only when that content must truly be dynamic. This combinati
 
 ## Past projects
 
-These are some examples of past dsmHack projects which were built using JAMStack:
+These are some examples of past dsmHack projects which were built using JAMStack: '
 
 * [Les Dames d'Escoffier](https://lesdamesdsm.org/) [{{< fa github >}}](https://github.com/dsmHack/2019-team-07) (2019)
 * [dsmHack - Hacker On-Boarding](https://dev.dsmhack.org/) [{{< fa github
