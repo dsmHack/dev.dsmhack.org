@@ -6,6 +6,8 @@ sidebar:
     - title: Hacker On-Boarding
       url: "#intro"
       is_primary: true
+    - title: Framing the project
+      url: "#framing-the-project"
     - title: Choosing a solution
       url: "#choosing-a-solution"
       is_primary: false
@@ -24,6 +26,19 @@ sections:
     background_style: style1
     actions: []
     component: intro.html
+  - type: section
+    template: section
+    title: Framing the project
+    subtitle: "The success of your project largely depends on understanding your nonprofit's true problem.
+        Before you crack open your IDE and dive into the code, take some time to glean important insights
+        up front, so that you can be more efficient with your time during the hack. Here are some tips for
+        interviewing your nonprofit, form a problem statement, mapping their story, and prioritizing work."
+    section_id: framing-the-project
+    background_style: style2
+    actions:
+      - label: Learn More
+        url: /project-framing/
+    component: section.html
   - type: features
     template: features
     title: Choosing a solution
