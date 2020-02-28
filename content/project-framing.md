@@ -17,8 +17,14 @@ Congratulations! You've selected your nonprofit project and are ready to get sta
 
 ## Interviewing Your Nonprofit
 
+
+
 ### Take (Post It) Notes
-A lot is about to be said in the next hour. You cannot possibly remember it all. You also don't know enough yet to understand how what they are saying this moment connects to an insight you'll have in two hours.
+A lot is about to be said in the next hour. You cannot possibly remember it all. You also don't know enough yet to understand how what they are saying this moment connects to an insight you'll have in two hours. You could do this in a notebook or shared document, like your probably used to for school, or you could try something a bit different.
+
+PostIt Notes have become almost [synonymous with brainstorming & creativity](https://www.nngroup.com/articles/post-it-in-ux/) for good reason. They are flexible, tangible, collaborative, and low tech. By taking notes on PostIts, you can quickly connect and organize ideas in a way that both your team and nonprofits can quickly see and contribute to. Jot one idea per note. Come up with a loose color coding (like blue for notes, yellow for ideas, red for pain points, or you're fine just sticking to one color if it is too much to keep track of). Don't worry too much about organizing them at first. You can start by putting them randomly on a wall or even a table. Once the ideas are out there, you can start grouping them. Stick related notes to one another so you can move the group all together.
+
+![PostIt Notetaking from 2014 DSMHack][mypostit] ![PostIt Notetaking. Photo credit: https://medium.com/digital-experience-design/5-tricks-to-master-the-art-of-post-it-notes-fa02f3f5a2e5][postit]
 
 
 ### Active & Open Listening
@@ -52,9 +58,16 @@ Client: “Well, not necessarily. I guess what I really meant is that I’d like
 ## Form a Problem Statement
 
 ## Map Their Current & Ideal States
+![Journey Map][map]
 
 
 
 
 
 ## Prioritize
+
+
+
+[postit]: ../images/postit-notetaking.jpg "PostIt Notetaking"
+[mypostit]: ../images/2014-postit-notes.jpg "PostIt Notes from 2014 DSMHack"
+[map]: ../images/2019-map.jpg "Journey Map from 2019 DSMHack"
