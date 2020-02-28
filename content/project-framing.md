@@ -1,20 +1,19 @@
 ---
-title: Framing the Problem
+title: Framing the Project
 home_spotlights:
-  enabled: true
+  enabled: false
   weight: 1
-  excerpt: The success of your project largely depends on understanding your nonprofit's true problem.
+  excerpt: The success of your project largely depends on understanding your nonprofit's project.
       Before you crack open your IDE and dive into the code, take some time to glean important insights
       up front, so that you can be more efficient with your time during the hack.
   home_img:
-    path: images/pic01.jpg
+    path: images/framing-barn.jpg
     data_position: center center
     url: "#"
 layout: page
 ---
 
-Congratulations! You've selected your nonprofit project and are ready to get started. Before you crack open your IDE and dive into the code, the first few hours of the jam
-are most well spent building a deep understanding of the problem your nonprofit is trying to solve. By doing this well, you will have a better defined path for the next 40+ hours. You may also discover unexpected solutions that your nonprofit didn't even know to ask for. After all, they are experts in serving their communities, not the nuances of the latest and greatest technology.
+Congratulations! You've selected your nonprofit project and are ready to get started. Before you crack open your IDE and dive into the code, the first few hours of the jam are most well spent building a deep understanding of the problem your nonprofit is trying to solve. By doing this well, you will have a better defined path for the next 40+ hours. You may also discover unexpected solutions that your nonprofit didn't even know to ask for. After all, they are experts in serving their communities, not the nuances of the latest and greatest technology.
 
 ## Interviewing Your Nonprofit
 
