@@ -35,7 +35,7 @@ The focus of this time is to hear what they have to say, not to try to push your
 - **Let them talk.** Try to avoid talking much beyond your questions. Don't interrupt and be ok with some silence after your questions.
 - **Dig into the why.** Anytime they veer into proposing solutions, dig deeper. "You say you need an app. Why?" "Tell me more about how X would change things." The technique of ["5 Whys"](https://www.mindtools.com/pages/article/newTMC_5W.htm) can surface an underlying need that may have simpler solutions than what they realize.
 - **Start broad, get more specific.**
-- **Ask for examples.** Get specific. "The last time" or "the worst time" is usually much more detailed.
+- **Ask for examples.** Get specific. "The last time" or "the worst time" is usually much more detailed than the general average version of the story.
 
 ### Example Interview Questions
 - **How did you come to work at this nonprofit?**
@@ -70,15 +70,38 @@ The focus of this time is to hear what they have to say, not to try to push your
 - **What is their plan for supporting this project after the jam?** Who is going to be maintaining the content or process you are going to work on for the next 40+ hours? Understanding this plan can help you create good handover training and maintenance documentation (a great task for a non-technical teammate).
 
 ## Understanding the Who
-staff, donors, volunteers, and community
-Personas - https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them
+People are the heart of every nonprofit: staff, donors, volunteers, and the community they are serving. Each roles will likely be impacted by your project differently or use it in different ways. Ask your nonprofits who the primary targets of this solution are. If they say everyone, try to get them to rank which groups are the most important audiences.
+
+Have them help you build simple [personas](https://www.hotjar.com/blog/user-personas/) for the main audiences. This doesn't have to be extensive or elaborate, but it will help anchor your project in the actual humans that will need to use it. You also may have multiple personas for one role if they have large enough differences. An example would be volunteers with different motivations or obstacles -- a college student volunteer might have trouble coordinating transportation vs a retiree may have trouble navigating the website.
+
+The main things you should define for each persona:
+- **Shorthand name** (could be their role or a real name)
+- **Who are they** (focus on the details that make a difference)
+- **What are their goals**
+- **What are the current obstacles to those goals**
+
+## Map Their Current & Ideal States
+Instead of just talking about their current process, it is often helpful to see it mapped out, alongside desired ideal state. This is an example [story map](https://www.jpattonassociates.com/the-new-backlog/), from the 2019 DSMHack, mapping the process of volunteers signing up through showing up for their shift.
+
+![Journey Map][map]
+
+
+
 
 
 ## Form a Problem Statement
+At this point you have enough information to form your problem statement. One way of framing this is in a question:
 
-## Map Their Current & Ideal States
-![Journey Map][map]
-https://www.jpattonassociates.com/the-new-backlog/
+**How might we** [Insert Problem] (*optionally add:* **so that** [Desired Outcome])**?**
+
+### Example from 2019 DSMHack
+**Original solution idea from nonprofit:** Build a volunteer rewards store.
+
+**Reframed problem statement:** How might we encourage volunteers to volunteer again after an initial organized volunteering event?
+
+In the initial conversations the team discovered that there were also problems with their sign up forms that made it difficult to see upcoming events. The team delivered the asked for rewards store AND improved their volunteer sign up forms to better solve the problem from multiple angles.
+
+
 
 
 
@@ -92,6 +115,7 @@ https://www.jpattonassociates.com/the-new-backlog/
 
 ## Additional Resources/Techniques
 https://www.designkit.org/methods
+https://www.atlassian.com/team-playbook/plays
 
 [postit]: ../images/postit-notetaking.jpg "PostIt Notetaking"
 [mypostit]: ../images/2014-postit-notes.jpg "PostIt Notes from 2014 DSMHack"
