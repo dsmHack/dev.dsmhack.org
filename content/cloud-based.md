@@ -36,7 +36,7 @@ Another option that has become popular at the hack is to use a cloud based websi
 
 ## Wix
 
-[Wix](https://wix.com) has been one of the top leaders in the website builder space for several years now.  It provides an easy to use drag and drop editor that requires no knowledge of code.  This probably doesn't sound great to all you hackers but from a nonprofits perspective this can be very desirable.  The biggest challenge you will have if your team decided to use Wix will be with collaboration within the tool.  Having multiple people editing at the same time is currently [not supported](https://support.wix.com/en/article/request-allowing-multiple-contributors-to-edit-a-site-at-the-same-time) so you will have to get creative with how you approach working together to build the site within Wix.  This is usually only a problem during dsmHack since normally after the hack your nonprofit won't have several people editing the site.  So, just make sure you consider what is best for your nonprofit.
+[Wix](https://wix.com) has been one of the top leaders in the website builder space for several years now.  It provides an easy to use drag and drop editor that requires no knowledge of code.  This probably doesn't sound great to all you hackers but from a nonprofit's perspective this can be very desirable.  The biggest challenge you will have if your team decided to use Wix will be with collaboration within the tool.  Having multiple people editing at the same time is currently [not supported](https://support.wix.com/en/article/request-allowing-multiple-contributors-to-edit-a-site-at-the-same-time) so you will have to get creative with how you approach working together to build the site within Wix.  This is usually only a problem during dsmHack since normally after the hack your nonprofit won't have several people editing the site.  So, just make sure you consider what is best for your nonprofit.
 
 ### Past Projects
 
@@ -62,7 +62,7 @@ Another option that has become popular at the hack is to use a cloud based websi
 
 ## Webflow
 
-[Webflow](https://webflow.com/) is a very different site builder than the others listed here.  It provides an advanced editor geared towards developers and designers that allows you to visualize not just the elements on the page but the HTML structure and CSS styles. This gives you a lot more power to customize your site as you want it. It also keeps all this functionality separate from the content editing experience so your nonprofits should not be feel overwhelmed.  We haven't had any previous dsmHack project's use Webflow but its unique approach to an online site builder and the fact that it is free to use until your are ready to publish means it deserves some consideration.
+[Webflow](https://webflow.com/) is a very different site builder than the others listed here.  It provides an advanced editor geared towards developers and designers that allows you to visualize not just the elements on the page but the HTML structure and CSS styles. This gives you a lot more power to customize your site as you want it. It also keeps all this functionality separate from the content editing experience so your nonprofits should not be feel overwhelmed.  We haven't had any previous dsmHack projects use Webflow but its unique approach to an online site builder and the fact that it is free to use until you are ready to publish means it deserves some consideration.
 
 ## IM Creator
 

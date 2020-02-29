@@ -91,7 +91,7 @@ host.
 
 ### Static Site Generators
 
-The static site generator (SSG) is a tool responsible for generating your site.  The are several to choose from and
+The static site generator (SSG) is a tool responsible for generating your site.  There are several to choose from and
 while they all generally do the same thing they are definitely not all created equal.  The site,
 [StaticGen.com](https://www.staticgen.com/), provides a summary of most of the known generators available.  It provides
 several metrics to help you gauge the maturity and popularity of a generator like number of stars and number of issues
@@ -126,7 +126,7 @@ and it will drive all the next decisions you make. We recommend you consider the
 
 ### Headless CMS
 
-Whenever I mention the idea of using JAMStack for a dsmHack project I almost always get a the same response. It
+Whenever I mention the idea of using JAMStack for a dsmHack project I almost always get the same response. It
 basically goes like this, "How do you expect nonprofits to know how to update markdown files and a Git repository?" This
 usually is the result of someone only having experience using [Jekyll](https://jekyllrb.com/) with [Github
 Pages](https://pages.github.com/) for a project that only ever required a developer be involved.  The truth is there are
