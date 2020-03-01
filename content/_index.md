@@ -32,7 +32,7 @@ sections:
     subtitle: "The success of your project largely depends on understanding your nonprofit's true problem.
         Before you crack open your IDE and dive into the code, take some time to glean important insights
         up front, so that you can be more efficient with your time during the hack. Here are some tips for
-        interviewing your nonprofit, form a problem statement, mapping their story, and prioritizing work."
+        interviewing your nonprofit, forming a problem statement, mapping their story, and prioritizing work."
     section_id: framing-the-project
     background_style: style2
     actions:
