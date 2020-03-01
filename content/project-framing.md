@@ -29,7 +29,7 @@ PostIt Notes have become almost [synonymous with brainstorming & creativity](htt
 
 ### Active & Open Listening
 The focus of this time is to hear what they have to say, not to try to push your own solution or ideas (wait for it, that can come later). By using [active listening](https://www.mindtools.com/CommSkll/ActiveListening.htm) and open interview questions, you'll get much richer information.
-- **Pay attention.** This is not the time to be multi-tasking on your phone.
+- **Pay attention.** This is not the time to be setting up your laptop or researching your preferred solution.
 - **Repeat, reframe & summarize what you're hearing.** "So you're saying it would be helpful to... Did I get that right?"
 - **Ask questions to clarify & get below the surface.** "What do you mean when you say..." "I heard you say... Tell me more about that."
 - **Let them talk.** Try to avoid talking much beyond your questions. Don't interrupt and be ok with some silence after your questions.
@@ -65,14 +65,14 @@ The focus of this time is to hear what they have to say, not to try to push your
 
 ### Logistics Questions
 - **How often is content for this solution changing?**
-- **Do they have a brand style guide?** If they are part of a larger organization, they may have access to design colors, fonts, icons and photos that you can use to make your project accurately reflect their brand.
+- **Do they have a brand style guide?** If they are part of a larger organization, they may have access to design colors, fonts, icons and photos that you can use to make your project accurately reflect their brand. If they don't have one, there might be an opportunity to create one for them.
 - **What accounts & passwords to existing systems might be necessary?** If they are asking to integrate into a current technology system, they should either create an account for you to log in or give you the credentials to log in. You'd hate to be making great progress at 2am only to be blocked by an unknown password.
 - **What's the best way to contact them during the jam?** Exchange cell numbers, email addresses or whatever their preferred means of communication.
 - **Do they have any budget for this project?** Ideally try to use free solutions. However, sometimes you get what you pay for and there might be a great fit for a reasonable amount of money. Understand whether that is an option or not for your group.
 - **What is their plan for supporting this project after the jam?** Who is going to be maintaining the content or process you are going to work on for the next 40+ hours? Understanding this plan can help you create good handover training and maintenance documentation (a great task for a non-technical teammate).
 
 ## Understanding the Who
-People are the heart of every nonprofit: staff, donors, volunteers, and the community they are serving. Each roles will likely be impacted by your project differently or use it in different ways. Ask your nonprofits who the primary targets of this solution are. If they say everyone, try to get them to rank which groups are the most important audiences.
+People are the heart of every nonprofit: staff, donors, volunteers, and the community they are serving. Each role will likely be impacted by your project differently or use it in different ways. Ask your nonprofits who the primary targets of this solution are. If they say everyone, try to get them to rank which groups are the most important audiences.
 
 Have them help you build simple [personas](https://www.hotjar.com/blog/user-personas/) for the main audiences. This doesn't have to be extensive or elaborate, but it will help anchor your project in the actual humans that will need to use it. You also may have multiple personas for one role if they have large enough differences. An example would be volunteers with different motivations or obstacles -- a college student volunteer might have trouble coordinating transportation vs a retiree may have trouble navigating the website.
 
@@ -109,11 +109,9 @@ At this point you have enough information to form your problem statement. One wa
 
 **Reframed problem statement:** How might we encourage volunteers to volunteer again after an initial organized volunteering event?
 
-In the initial conversations the team discovered that there were also problems with their sign up forms that made it difficult to see upcoming events. The team delivered the asked for rewards store AND improved their volunteer sign up forms to better solve the problem from multiple angles.
+In the initial conversations the team discovered that there were also problems with their sign up forms that made it difficult to see upcoming events. The team delivered the asked-for rewards store AND improved their volunteer sign up forms to better solve the problem from multiple angles.
 
 ## Map the Solution
-
-
 Now you can move on to the ideal state story map. You can decide if it should be a different color on the existing map (good if you aren't changing much about the current process), or a completely new map. Be sure to go end to end and cover the entire process. For an app, be sure to consider all the CRUD (create, read, update, delete) actions. You want to end up with at a summary of all the work you're going to be taking on in the jam.
 
 Double check that the solution actually addresses the main pain points you noted in the current story. If not, you might want to quickly brainstorm with your nonprofit other ideas that might better solve some of the pains they have expressed.
