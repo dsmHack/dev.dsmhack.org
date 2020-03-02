@@ -7,7 +7,7 @@ home_spotlights:
     system (CMS) solutions available.  It is built on PHP and MySQL and has thousands
     of templates and plug-ins available to extend its functionality.
   home_img:
-    path: images/pic01.jpg
+    path: images/wordpress.jpg
     data_position: center center
     url: "#"
 layout: page

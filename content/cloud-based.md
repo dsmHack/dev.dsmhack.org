@@ -8,8 +8,8 @@ home_spotlights:
     are generally more secure than self-hosted CMS solutions due to the cloud based
     provider handling most of the security and upgrades. '
   home_img:
-    path: images/pic03.jpg
-    data_position: 25% 25%
+    path: images/cloud-based.jpg
+    data_position: 35% 25%
     url: "#"
 layout: page
 ---
