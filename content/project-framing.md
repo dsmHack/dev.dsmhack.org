@@ -17,12 +17,10 @@ Congratulations! You've selected your nonprofit project and are ready to get sta
 
 ## Interviewing Your Nonprofit
 
-
-
 ### Take (Post It) Notes
-A lot is about to be said in the next hour. You cannot possibly remember it all. You also don't know enough yet to understand how what they are saying this moment connects to an insight you'll have in two hours. You could do this in a notebook or shared document, like you're probably used to for school, or you could try something a bit different.
+A lot is about to be said in the next hour. You cannot possibly remember it all. You also don't know enough yet to understand how what they are saying this moment connects to an insight you'll have in two hours. Your first instinct may be to do this in a notebook or shared document, but the following "low tech" approach has a number of benefits.
 
-PostIt Notes have become almost [synonymous with brainstorming & creativity](https://www.nngroup.com/articles/post-it-in-ux/) for good reason. They are flexible, tangible, collaborative, and low tech. By taking notes on PostIts, you can quickly connect and organize ideas in a way that both your team and nonprofits can quickly see and contribute to. Jot one idea per note. Come up with a loose color coding (like blue for notes, yellow for ideas, red for pain points, or you're fine just sticking to one color if it is too much to keep track of). Don't worry too much about organizing them at first. You can start by putting them randomly on a wall or even a table. Once the ideas are out there, you can start grouping them. Stick related notes to one another so you can move the group all together.
+PostIt Notes have become almost [synonymous with brainstorming & creativity](https://www.nngroup.com/articles/post-it-in-ux/) for good reason. They are flexible, tangible, collaborative, and low tech (no account setup required; not even a computer!). By taking notes on PostIts, you can quickly connect and organize ideas in a way that both your team and nonprofits can quickly see and contribute to. Jot one idea per note. Come up with a loose color coding (like blue for notes, yellow for ideas, red for pain points, or you're fine just sticking to one color if it is too much to keep track of). Don't worry too much about organizing them at first or people writing the same thing on different notes. You can start by putting them randomly on a wall or even a table. Once the ideas are out there, you can start grouping them. Stick related notes to one another so you can move the group all together.
 
 ![PostIt Notetaking from 2014 DSMHack][mypostit] ![PostIt Notetaking. Photo credit: https://medium.com/digital-experience-design/5-tricks-to-master-the-art-of-post-it-notes-fa02f3f5a2e5][postit]
 
@@ -35,7 +33,7 @@ The focus of this time is to hear what they have to say, not to try to push your
 - **Let them talk.** Try to avoid talking much beyond your questions. Don't interrupt and be ok with some silence after your questions.
 - **Dig into the why.** Anytime they veer into proposing solutions, dig deeper. "You say you need an app. Why?" "Tell me more about how X would change things." The technique of ["5 Whys"](https://www.mindtools.com/pages/article/newTMC_5W.htm) can surface an underlying need that may have simpler solutions than what they realize.
 - **Start broad, get more specific.**
-- **Ask for examples.** Get specific. "The last time" or "the worst time" is usually much more detailed than the general average version of the story.
+- **Ask for examples of the problem they're trying to solve.** Get specific. "The last time" or "the worst time" is usually much more detailed than the general average version of the story.
 
 ### Example Interview Questions
 - **How did you come to work at this nonprofit?**
