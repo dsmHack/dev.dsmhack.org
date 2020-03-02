@@ -22,6 +22,7 @@ A lot is about to be said in the next hour. You cannot possibly remember it all.
 
 PostIt Notes have become almost [synonymous with brainstorming & creativity](https://www.nngroup.com/articles/post-it-in-ux/) for good reason. They are flexible, tangible, collaborative, and low tech (no account setup required; not even a computer!). By taking notes on PostIts, you can quickly connect and organize ideas in a way that both your team and nonprofits can quickly see and contribute to. Jot one idea per note. Come up with a loose color coding (like blue for notes, yellow for ideas, red for pain points, or you're fine just sticking to one color if it is too much to keep track of). Don't worry too much about organizing them at first or people writing the same thing on different notes. You can start by putting them randomly on a wall or even a table. Once the ideas are out there, you can start grouping them. Stick related notes to one another so you can move the group all together.
 
+
 ![PostIt Notetaking from 2014 DSMHack][mypostit] ![PostIt Notetaking. Photo credit: https://medium.com/digital-experience-design/5-tricks-to-master-the-art-of-post-it-notes-fa02f3f5a2e5][postit]
 
 
@@ -33,7 +34,9 @@ The focus of this time is to hear what they have to say, not to try to push your
 - **Let them talk.** Try to avoid talking much beyond your questions. Don't interrupt and be ok with some silence after your questions.
 - **Dig into the why.** Anytime they veer into proposing solutions, dig deeper. "You say you need an app. Why?" "Tell me more about how X would change things." The technique of ["5 Whys"](https://www.mindtools.com/pages/article/newTMC_5W.htm) can surface an underlying need that may have simpler solutions than what they realize.
 - **Start broad, get more specific.**
+
 - **Ask for examples of the problem they're trying to solve.** Get specific. "The last time" or "the worst time" is usually much more detailed than the general average version of the story.
+
 
 ### Example Interview Questions
 - **How did you come to work at this nonprofit?**
