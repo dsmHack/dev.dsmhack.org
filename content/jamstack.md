@@ -25,9 +25,9 @@ dynamic content and only when that content must truly be dynamic. This combinati
 
 These are some examples of past dsmHack projects which were built using JAMStack: '
 
-* [Les Dames d'Escoffier](https://lesdamesdsm.org/) [{{< fa github >}}](https://github.com/dsmHack/2019-team-07) (2019)
+* [Les Dames d'Escoffier](https://lesdamesdsm.org/) [{{< fa github >}}](https://github.com/dsmHack/2019-team-07) - (2019)
 * [dsmHack - Hacker On-Boarding](https://dev.dsmhack.org/) [{{< fa github
-  >}}](https://github.com/dsmHack/dev.dsmhack.org) (2019)
+  >}}](https://github.com/dsmHack/dev.dsmhack.org) - (2019)
 
 ## Is JAMStack right for your project?
 
