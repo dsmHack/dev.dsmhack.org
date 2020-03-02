@@ -6,8 +6,8 @@ home_spotlights:
   excerpt: Fast and secure sites and apps delivered by pre-rendering files and serving
     them directly from a CDN, removing the requirement to manage or run web servers.
   home_img:
-    path: images/pic02.jpg
-    data_position: top center
+    path: images/jamstack.jpg
+    data_position: center center
     url: "#"
 layout: page
 ---
