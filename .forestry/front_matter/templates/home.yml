@@ -47,6 +47,7 @@ fields:
   - spotlights
   - features
   - contact
+  - section
 - type: text
   name: layout
   label: Layout
