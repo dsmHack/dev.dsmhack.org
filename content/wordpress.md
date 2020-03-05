@@ -57,12 +57,16 @@ choice for your project.
 
   While a WordPress site is really easy to get up and running, maintaining it can be an entirely different story.
   WordPress has automatic updates built-in for the platform, themes, and plug-ins.  However, if you've made any
-  customizations to your theme then updating it will likely overwrite all of your customizations.  In addition, many
-  times plug-ins are not compatible with all versions of WordPress so you can find yourself in a situation where you
-  want to update WordPress but doing so would result in a plug-in no longer working.  This can be very frustrating to
-  manage and is something most of our nonprofits will have a hard time understanding.  The main thing you can do to
-  mitigate this is limit your plug-in usage to only mainstream and well supported plug-ins and either don't customize
-  your theme or if you do customize it make a copy of it and customize the copy.
+  customizations to your theme then updating it will likely overwrite all of your customizations. If you're going
+  to be making custom updates to the theme that you've chosen, it's recommended that you use a child theme for those
+  customizations. More information about creating a child theme can be found
+  [here](https://developer.wordpress.org/themes/advanced-topics/child-themes/).
+  
+  In addition, many times plug-ins are not compatible with all versions of WordPress so you can find yourself in a
+  situation where you want to update WordPress but doing so would result in a plug-in no longer working.
+  This can be very frustrating to manage and is something most of our nonprofits will have a hard time understanding.
+  The main thing you can do to mitigate this is limit your plug-in usage to only mainstream and well supported plug-ins
+  and either don't customize your theme or if you do customize it make a copy of it and customize the copy.
 
 * **Vulnerability**
 
@@ -71,11 +75,21 @@ choice for your project.
   maintenance is so important.  You need to keep WordPress up-to-date to make sure you have the latest security patches.
   It's also very important you have strong passwords and preferably two factor authentication on the admin site.  Also,
   it's recommended to turn off the ability to post comments on every page unless the nonprofit needs that feature.
+  
+  The WordPress community has a number of both free and paid security plug-ins to actively monitor vulnerabilities. Depending
+  on the client and budget, a paid plug-in may be worth its price to keep the website secure.
+  
+  * Free Security Plug-in: (https://wordpress.org/plugins/better-wp-security/)
+  * Paid Version: (https://ithemes.com/security/) - The $80/year "blogger" license works for one site.
 
 * **Performance**
 
   A fresh install of WordPress will have seemingly no issues with performance. However, as soon as you start adding in a
   theme and several plugins, more often than not you will start to see a slow down.
+  
+  There are many performance-improving plug-ins that provide caching for the WordPress site. This allows for better
+  performance under a larger user load, or when a page has a large amount of dynamic content or plug-ins. Find out
+  more about caching plug-ins for WordPress [here](https://kinsta.com/blog/wordpress-caching-plugins/).
 
 * **Collaborative Development**
 
