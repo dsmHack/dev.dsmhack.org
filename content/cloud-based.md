@@ -62,7 +62,11 @@ Another option that has become popular at the hack is to use a cloud based websi
 
 ## Webflow
 
-[Webflow](https://webflow.com/) is a very different site builder than the others listed here.  It provides an advanced editor geared towards developers and designers that allows you to visualize not just the elements on the page but the HTML structure and CSS styles. This gives you a lot more power to customize your site as you want it. It also keeps all this functionality separate from the content editing experience so your nonprofits should not be feel overwhelmed.  We haven't had any previous dsmHack projects use Webflow but its unique approach to an online site builder and the fact that it is free to use until you are ready to publish means it deserves some consideration.
+[Webflow](https://webflow.com/) is a very different site builder than the others listed here. It provides an advanced editor geared towards developers and designers that allows you to visualize not just the elements on the page but the HTML structure and CSS styles. This gives you a lot more power to customize your site as you want it. Like many other online editors, WebFlow only allows one user to make structural or CSS changes at a time. Going with an approach like this usually works well for smaller teams or individuals but can limit how much can be worked in parallel during the hack. Up to ten users can be editing separate page content at a time so we'd recommend building the site pages and structure first and then breaking up work page by page. Webflow does a great job of keeping all the CSS and HTML structure functionality separate from the content editing experience so your nonprofits should not feel overwhelmed. Webflow's unique approach to an online site builder and the fact that it is free to use until you are ready to publish means it deserves some consideration.
+
+### Past Projects
+
+* [Justice League of Food](https://justiceleagueoffood.org/) - (2020)
 
 ## IM Creator
 
